@@ -1,0 +1,251 @@
+.resources-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.resources-head h1{
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: rgb(22, 22, 22);
+ }
+ 
+
+ .resources-head button{
+     margin-top: 50px;
+     border: 0;
+     border-radius: 4px;
+     width: 150px;
+     height: 50px;
+     color: white;
+     background-color: blue;
+ }
+
+ #resources .card{
+     background-color: rgb(254, 254, 254);
+     height: auto;
+ }
+
+ #resources h4{
+     text-align: center;
+ }
+
+
+/* .header-details{
+    background-color: blue!important;
+}
+
+.resources-detail{
+background-color: blue!important;
+} */
+
+/****************Resouces details*************/
+
+.resources-detail h1{
+    color: black;    
+}
+
+.resources-detail .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 20%;
+    background-color:blue;
+    margin-bottom: 10px;
+    color: white;
+    margin-right: 15px;
+}
+@media (max-width: 500px) {
+    .resources-categories {
+    overflow-x: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+ }
+}
+
+
+.resources-detail .box h3 > a{
+    color: white;
+}
+
+.resources-detail .box h3{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.resources-col img{
+    position: relative;
+    width: 100px;
+    height: fit-content;
+}
+
+.resources-col p{
+    margin-left: 20px;
+}
+
+.resources-col button{
+    background-color: blue;
+    color: whitesmoke;
+    text-align: end;
+    border-radius: 5px;
+    padding: 5px 15px;
+    border-width: 0px;
+    font-size: 16px;
+    transition: opacity 0.3s;
+}
+
+
+.resources-col button:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+  
+
+.resources-col .assets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid rgb(244, 244, 244);
+    width: auto;
+    height: 100px;
+}
+
+
+
+@media (max-width: 500px) {
+    .assets p {
+        margin-left: 20px;
+        overflow-x: hidden;
+        white-space: nowrap;
+    }
+    .resources-col img{
+        width: 80px;
+    }
+}
+/* .resources-detail{
+    background-image: url(../img/resources/3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+
+
+
+
+
+
+
+ .card button{
+    border: 0;
+    background-color: blue;
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    height: 40px;
+ }
+
+.card h4{
+    color: blue;
+    font-weight: 900;
+    background-color: aliceblue;
+}
+
+.card:hover h4{
+    color:black;
+}
+.card img {
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+}
+
+.card:hover img {
+    -webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+    -webkit-transform: scale(1.04);
+    transform: scale(1.04);
+}
+
+.section-bg{
+ background-color: rgba(0, 0, 166, 0.082);
+}
+
+
+
+
+
+
+.form-control::placeholder {
+    font-size: 14px;
+    color: #aaa;
+    font-style: italic;
+  }
+
+  .resources-detail-head input, .resources-detail-head button{
+      height: 50px;
+  }
+
+  .resources-detail-head form .form-control:focus{
+        border-color: blue;
+        box-shadow: none;
+    }
+  .resources-detail-head .input-search button {
+      width: 70px;
+      border-radius: 0 5px 5px 0;
+      background-color: blue;
+  }
+
+
+
+
+  .next-page button{
+      padding: 10px 40px;
+  }
+
+  
+.dropdown select{
+    width: 150px;
+    margin-left: auto;
+    margin-right: 5px;
+  }
+
+  .dropdown select, .dropdown select:focus{
+      box-shadow: none;
+      border-color: rgba(0, 0, 255, 0.599);
+      outline: 0;
+      border-radius: 2px;
+  }
+
+  .dropdown i{
+      margin-right: auto ;
+      margin-left: 5px ;
+      font-size: 20px;
+  } 
+
+  .dropdown i {
+    font-size: 25px;
+    font-weight: 500;
+    color: black;
+  }
+
+  .dropdown span{
+   font-size: 20px;
+  }
+ 
+  

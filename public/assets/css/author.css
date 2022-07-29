@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(13, 13, 54);
+}
+
+
+#header .nav{
+    background-color: rgb(8, 8, 8);
+}
+
+#header .nav ul a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+h1{
+    color: whitesmoke;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>{{ title }}</title>
+  <meta content="" name="description">
+  <meta content="" name="technology, business">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Blog CSS File -->
+  <link href="/blog.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+
+    {% include 'header.njk' %}
+
+    <main>
+    {{ content | safe}}
+    </main>
+
+    {% include 'footer.njk' %}
+
+
+
+
+        <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+   </script>
+
+     <!-- Vendor JS Files -->
+  <script src="/assets/vendor/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/blog.js"></script>
+
+  <script>
+      var images = [],
+      index = 0;
+
+      images[0] = "	<a href=http://invl.co/ntdb target=_blank><img src=/assets/img/ads/advert1.gif></a>	";
+      images[1] = "	<a href=http://invl.co/ttdb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/BolehCompare_Maxis_300250_End_Generic.jpg></a>	";
+      images[2] = "	<a href=http://invl.co/qtdb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/BolehCompare_Time_300250_End_Generic.jpg></a>	";
+      images[3] = "	<a href=http://invl.co/otdb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/BolehCompare_TMunifi_300250_End_Generic.jpg></a>	";
+      images[4] = "	<a href=http://invl.co/qjcb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/6957-LazadaMY_2017GHuaweiP10_300250_End_Generic.jpg></a>	";
+      images[5] = "	<a href=http://invl.co/pjcb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/6959-LazadaMY_20175thBirthday_300250_End_24Mar2017.jpg></a>	";
+      index = Math.floor(Math.random() * images.length);
+
+      let advert = document.querySelector(".ads");
+
+      advert.innerHTML = images[index];
+  </script>
+</body>
+ </html>
