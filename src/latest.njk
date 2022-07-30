@@ -1,0 +1,25 @@
+---
+title: Latest
+layout: 'base.njk'
+---
+
+
+
+        <section class="mt-5">
+            <div class="container blog">
+              <div class="d-flex align-items-center cat ">
+              <a href="./blog" class="title">Latest articles</a>
+              </div>
+              <div class="row row-cols-lg-3 mt-4 small">
+
+  {%- for post in collections.post -%}
+
+    {% include 'article-snippet.njk' %}
+
+  {%- endfor %}
+                
+              </div>
+            </div>
+          </section>
+
+    

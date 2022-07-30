@@ -1,0 +1,6 @@
+         <article class="snippet">
+                <a href="{{ post.url }}"><img src="{{ post.data.image }}" class="snippet__image" alt="{{post.data.imageAlt}}"></a>
+                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>{{ post.data.tags }}</p>
+                <a href="{{ post.url }}"><h3 class="snippet__title mt-3 ">{{ post.data.title }}</h3></a>
+                <p class="snippet__meta">by <span>{{ post.data.author }}</span> on <span>{{ post.date | postDate }}</span></p>
+          </article>
