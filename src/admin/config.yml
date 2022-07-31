@@ -4,9 +4,9 @@ backend:
 media_folder: "public/assets/img/posts"
 public_folder: "/assets/img/posts"
 collections:
-- name: "posts"
-  label: "posts"
-  folder: "/src/posts"
+- name: "blog"
+  label: "blog"
+  folder: "src/posts"
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   fields: 
@@ -14,16 +14,11 @@ collections:
     - { label: "Description", name: "description", widget: "string" }
     - { label: "Author", name: "author", widget: "string" }
     - { label: "Date", name: "date", widget: "datetime" }
-    - { label: "Tags", name: "tags", widget: "list", default : ["All"] }
+    - { label: "Tags", name: "tags", widget: "list", default : ["post"] }
     - { label: "Featured Image", name: "image", widget: "image" }
     - { label: "Image caption", name: "imageAlt", imageAlt: "string" }
-    - { label: "Body", name: "body", widget: "markdown" } 
+    - { label: "Body", name: "body", widget: "markdown" }  
     
 
 
 
-
-
-
-
-  
