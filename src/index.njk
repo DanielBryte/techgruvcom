@@ -4,59 +4,79 @@ layout: 'base.njk'
 ---
 
 
+        
+        {# {%  include 'article-snippet.njk' %} #}
 
 
 <section class="mt-5">
   <div class="container">
     <div class="row big">
+
+
       <div class="col-12 col-md-7 col-lg-8">
-          <article class="snippet">
-            <a href="/latest/2022-07-31-Essentials-Needs-Of-a-Website/index.html"><img src="/public/assets/blog/article-1.png" class="snippet__image" alt="This is a test"></a>
-                <p class="snippet__tag">Business</p>
-                <a href=""><h3 class="snippet__title mt-3 ">Essential reasons why your business should have a website</h3></a>
-                <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
-                <a href="/blog/2022-07-31-Essentials-Needs-Of-a-Website/index.html" class="snippet__btn ">Read more...</a>
-          </article>
+    
+        {%- for post in collections.Featured -%}
+        
+    {% include 'big-article-snippet.njk' %}
+
+
+        {%- endfor %}
 
       </div>
+    
+
+
 
         <div class="col-12 col-md-5 col-lg-4 side_bar">
-            <h3 class="title">Join the community</h3>
+            <h3 class="title">Follow and Join the community</h3>
             
             <div class="side_body">
 
             <div class="media-body d-flex flex-column">
                   <div class="media">
-                    <a class="d-flex align-items-center" href=""><i class='bx bxl-whatsapp-square' style="color: #25D366"></i>
+                    <a class="d-flex align-items-center" href="https://wa.me/message/4K7GHOUI66JFJ1"><i class='bi bi-whatsapp'></i>
                       <span class="d-flex align-items-center">Whatsapp community</span>
                     </a>
-                    <i class='bx bx-chevron-right'></i>
+                    <a href="https://wa.me/message/4K7GHOUI66JFJ1"><i class='bx bx-chevron-right'></i></a>
                   </div>
 
                   <div class=" media">
-                    <a class="d-flex align-items-center" href=""><i class='bx bxl-telegram' style="color: #6cc1e3 "></i>
+                    <a class="d-flex align-items-center" href="https://t.me/+5CsEkjVt81tiM2Rk"><i class='bi bi-telegram'></i>
                       <span class="d-flex align-items-center">Telegram community</span>
                     </a>
-                    <i class='bx bx-chevron-right' ></i>
+                    <a href="https://t.me/+5CsEkjVt81tiM2Rk"><i class='bx bx-chevron-right'></i></a>
                   </div>
 
                   <div class="media">
-                    <a class="d-flex align-items-center" href=""><i class='bx bxl-twitter' style="color: #1DA1F2"></i>
+                    <a class="d-flex align-items-center" href="https://twitter.com/techgruv"><i class='bi bi-twitter'></i>
                       <span class="d-flex align-items-center">Twitter </span>
                     </a>
-                    <i class='bx bx-chevron-right'></i>
+                    <a href="https://twitter.com/techgruv"><i class='bx bx-chevron-right'></i></a>
                   </div>
                   
                   <div class="media">
-                    <a class="d-flex align-items-center" href=""><i class='bx bxl-twitter' style="color: #1DA1F2"></i>
-                      <span class="d-flex align-items-center">Twitter </span>
+                    <a class="d-flex align-items-center" href="https://www.linkedin.com/company/techgruv"><i class='bi bi-linkedin'></i>
+                      <span class="d-flex align-items-center">Linkedin </span>
                     </a>
-                    <i class='bx bx-chevron-right'></i>
+                    <a href="https://www.linkedin.com/company/techgruv"><i class='bx bx-chevron-right'></i></a>
+                  </div>
+
+                  <div class="media">
+                    <a class="d-flex align-items-center" href="https://youtube.com/c/techgruv"><i class='bi bi-youtube'></i>
+                      <span class="d-flex align-items-center">Youtube </span>
+                    </a>
+                     <a href="https://youtube.com/c/techgruv"><i class='bx bx-chevron-right'></i></a>
+                  </div>
+
+                   <div class="media">
+                    <a class="d-flex align-items-center" href="https://instagram.com/techgruv"><i class='bi bi-instagram'></i>
+                      <span class="d-flex align-items-center">Instagram</span>
+                    </a>
+                     <a href="https://instagram.com/techgruv"><i class='bx bx-chevron-right'></i></a>
                   </div>
              </div>
              
-            <div class="ads d-flex align-items-center justify-content-center mt-5"></div>
+            <div class="ads1 d-flex align-items-center justify-content-center mt-5"></div>
         </div>
 
       </div>
@@ -72,38 +92,13 @@ layout: 'base.njk'
     <a href="./blog" class="d-flex align-items-center"><span>View all</span><i class='bx bx-chevron-right'></i></a>
     </div>
     <div class="row row-cols-lg-4 mt-4 small">
-      <div> <li>
-        <article class="snippet">
-          <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-              <p class="snippet__tag">Business</p>
-              <h3 class="snippet__title mt-3 ">Essential reasons why your business should have a website.</h3>
-              <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-        </article>
-      </li></div>
-      <div>        <li>
-        <article class="snippet">
-          <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-              <p class="snippet__tag">Business</p>
-              <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-              <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-        </article>
-      </li></div>
-      <div>        <li>
-        <article class="snippet">
-          <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-              <p class="snippet__tag">Business</p>
-              <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-              <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-        </article>
-      </li></div>
-      <div>        <li>
-        <article class="snippet">
-          <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-              <p class="snippet__tag">Business</p>
-              <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-              <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-        </article>
-      </li></div>
+
+  {%- for post in collections.post -%}
+
+    {% include 'article-snippet.njk' %}
+
+  {%- endfor %}
+
     </div>
   </div>
 </section>
@@ -113,7 +108,7 @@ layout: 'base.njk'
 
 <section class="mt-5 mb-5">
   <div class="container blog advert">
-    <img src="/assets/img/ads/ad1.webp" alt="">
+  <a href=""><img src="/assets/img/ads/large.png" alt=""></a>
   </div>
 </section>
 
@@ -129,11 +124,11 @@ layout: 'base.njk'
       <div class="col-12 col-md-6 col-lg-6">
         <li>
           <article class="snippet">
-            <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
+            <img src="/assets/img/posts/1.png" class="snippet__image" alt="This is a test">
                 <p class="snippet__tag">Business</p>
                 <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                <p class="snippet__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis accusantium sit illo neque rem omnis quaerat, nam similique vitae delectus ad magni vel quo maxime, magnam placeat. Reprehenderit, distinctio aliquam?</p>
+                <p class="snippet__meta">by<span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
+                <p class="snippet__body">You are missing out and losing lose of customers, sales that should be yours, take advantage of this digital era and get a website for your business</p>
             </article>
         </li>
 
@@ -141,39 +136,12 @@ layout: 'base.njk'
 
 
       <div class="col-12 col-md-6 col-lg-6  row row-cols-2 small">
-        <li>
-          <article class="snippet">
-            <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                <p class="snippet__tag">Business</p>
-                <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-          </article>
-        </li>
+          {%- for post in collections.Business -%}
 
-        <li>
-          <article class="snippet">
-            <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                <p class="snippet__tag">Business</p>
-                <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-          </article>
-        </li>
-        <li>
-          <article class="snippet">
-            <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                <p class="snippet__tag">Business</p>
-                <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-          </article>
-        </li>
-        <li>
-          <article class="snippet">
-            <img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                <p class="snippet__tag">Business</p>
-                <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-          </article>
-        </li>
+            {% include 'article-snippet.njk' %}
+
+          {%- endfor %}
+                
 
       </div>
     </div>
@@ -188,47 +156,11 @@ layout: 'base.njk'
     </div>
     <div class="row mt-4 big">
       <div class="col-12 col-md-6 col-lg-8 row row-cols-lg-2">
-          <li>
-            <article class="snippet">
-               <div><img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test"></div>
-                  <div>
-                  <p class="snippet__tag">Technology</p>
-                  <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                  <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                </div>
-              </article>
-          </li>
-          <li>
-            <article class="snippet">
-               <div><img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test"></div>
-                  <div class="big">
-                  <p class="snippet__tag">Technology</p>
-                  <h3 class="snippet__title  mt-3 ">Essential reasons why your business should have a website.</h3>
-                  <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                </div>
-              </article>
-          </li>
+                    {%- for post in collections.Technology -%}
 
-          <li>
-            <article class="snippet">
-               <div><img src="/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test"></div>
-                  <div class="big">
-                  <p class="snippet__tag">Technology</p>
-                  <h3 class="snippet__title  mt-3 ">Essential reasons why your business should have a website.</h3>
-                  <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                </div>
-              </article>
-          </li>
-          <li>
-            <article class="snippet">
-               <div><img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test"></div>
-                  <div class="big">
-                  <p class="snippet__tag">Technology</p>
-                  <h3 class="snippet__title  mt-3 ">Essential reasons why your business should have a website.</h3>
-                  <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                </div>
-              </article>
-          </li>
+            {% include 'article-snippet.njk' %}
+
+          {%- endfor %}
           
       </div>
 
@@ -245,14 +177,17 @@ layout: 'base.njk'
 <section class="mt-5">
   <div class="container blog">
     <div class="d-flex align-items-center justify-content-between cat">
-      <a href="./videos" class="title">Videos</a>
-      <a href="./videos" class="d-flex align-items-center"><span>View all</span><i class='bx bx-chevron-right'></i></a>
+      <a href="" class="title">Videos</a>
+      <a href="https://youtube.com/c/techgruv" class="d-flex align-items-center"><span>View all</span><i class='bx bx-chevron-right'></i></a>
     </div>
-    <div class="mt-3 mb-5 d-flex flex-lg-row flex-column">
-      <a class="me-1" href=""><img src="/public/assets/img/blog-coming-soon (1).png" alt=""></a>
-      <a class="me-1"href=""><img src="/public/assets/img/blog-coming-soon (1).png" alt=""></a>
-      <a class="me-1" href=""><img src="/public/assets/img/blog-coming-soon (1).png" alt=""></a>
-      <a class="me-1" href=""><img src="/public/assets/img/blog-coming-soon (1).png" alt=""></a>
+    <div class="mt-3 mb-5 d-flex flex-lg-row flex-column video">
+      <div class="me-1 mb-2">
+      <a  href="https://www.youtube.com/watch?v=EiuahjoZMBI">
+      <img src="/assets/img/videos/1.png" alt=""></a></div>
+      <div class="me-1 mb-2"><a  href="https://www.youtube.com/watch?v=EiuahjoZMBI"><img src="/assets/img/videos/1.png" alt=""></a></div>
+      <div class="me-1 mb-2"><a  href="https://www.youtube.com/watch?v=EiuahjoZMBI"><img src="/assets/img/videos/1.png" alt=""></a></div>
+      <div class="me-1 mb-2"><a  href="https://www.youtube.com/watch?v=EiuahjoZMBI"><img src="/assets/img/videos/1.png" alt=""></a></div>
+
     </div>
 </section>
 

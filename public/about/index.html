@@ -19,16 +19,15 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Blog CSS File -->
   <link href="/blog.css" rel="stylesheet">
-
 
 </head>
 <body>
@@ -39,14 +38,17 @@
     <div class="container d-flex align-items-center justify-content-between">
       <div class="logo ms-lg-0">
         <h1>
-          <img src="assets/img/logo.png" alt="logo">
-          <a href="index.html">TechGruv</a></h1>
+          <img src="/assets/img/logo.png" alt="logo">
+          <a href="/">TechGruv.</a></h1>
       </div>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/latest/">Latest</a></li>
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/latest/">Latest</a></li>
+          <li><a class="nav-link" href="/business/">Business</a></li>
+          <li><a class="nav-link" href="/technology/">Technology</a></li>
+
           </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -83,8 +85,8 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="f-item about">
                           <div class="brand">
-                          <img src="assets/img/techgruvassets/footer-logo1.svg" alt="Logo">
-                            <a href="">Techgruv</a>
+                          <img src="/assets/img/techgruvassets/footer-logo1.svg" alt="Logo">
+                            <a href="/">Techgruv</a>
                             <p>Just Technopreneurship</p>
                           </div>
                             <div class="address">
@@ -124,22 +126,22 @@
                             <h4 class="widget-title">Company</h4>
                             <ul>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="/about/">About</a>
                                 </li>
                                 <li>
-                                  <a href="contact.html">Contact Us</a>
+                                  <a href="/contact/">Contact Us</a>
                               </li>
                                 <li>
-                                    <a href="web-service.html">Services</a>
+                                    <a href="/services/">Services</a>
                                 </li>
                                 <li>
-                                    <a href="blog.html">Blog</a>
+                                    <a href="/">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="affliate.html">Affliate</a>
+                                    <a href="/affliate/">Affliate</a>
                                 </li>
                                 <li>
-                                    <a href="resources.html">Resources</a>
+                                    <a href="/resources/">Resources</a>
                                 </li>
                             </ul>
                         </div>
@@ -175,7 +177,7 @@
                         <div class="f-item recent-post">
                             <h4 class="widget-title">Recent News</h4>
                             <div class="item">
-                                <a href="#bottom">Essential reasons why your business should have a website.</a>
+                                <a href="/latest/2022-07-31-Essentials-Needs-Of-a-Website/">Essential reasons why your business should have a website.</a>
                                 <span><i class="bx bx-calendar-alt"></i> 22 MAY, 2022 -  <a href="#bottom">Admin<a><span>
                             </div>
                             <div class="item">
@@ -196,13 +198,13 @@
                         <p>Copyright &copy;  2022.
                         <ul>
                             <li>
-                                <a href="terms.html">Terms</a>
+                                <a href="/terms/">Terms</a>
                             </li>
                             <li>
-                                <a href="privacy.html">Privacy</a>
+                                <a href="/privacy/">Privacy</a>
                             </li>
                             <li>
-                                <a href="disclaimer.html">Disclaimer</a>
+                                <a href="/disclaimer/">Disclaimer</a>
                             </li>
                         </ul>
                     </div>
@@ -210,33 +212,16 @@
             </div>
         </div>
         <!-- End Footer Bottom -->
+
     </footer>
     <!-- End Footer -->
-    <a href="https://wa.me/message/4K7GHOUI66JFJ1" class="whatsapp d-flex align-items-center justify-content-center"><i class='bx bxl-whatsapp-square bx-tada' style='color:#1bbe36' ></i></a>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
+  
   
 
 
-  <!-- Vendor JS Files -->
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
-
-    <script src="/assets/js/blog.js"></script>
-
-  
-
-</body>
-</html>
-
-  
-
-
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-up-arrow-alt' style='color:#ffffff'></i></a>
 
 
 
@@ -260,20 +245,44 @@
   <script src="/assets/js/blog.js"></script>
 
   <script>
-      var images = [],
-      index = 0;
+    var images = [],
+        index = 0;
+        images[0] = "<a href=http://invl.co/qtdb target=_blank><img src=/assets/img/ads/advert1.gif></a>	";
+        images[1] = "<a href=http://invl.co/ttdb target=_blank><img src=/assets/img/ads/advert2.jpg></a>	";
+        images[2] = "<a href=http://invl.co/qtdb target=_blank><img src=/assets/img/ads/advert3.jpg></a>	";
+        index = Math.floor(Math.random() * images.length);
 
-      images[0] = "	<a href=http://invl.co/ntdb target=_blank><img src=/assets/img/ads/advert1.gif></a>	";
-      images[1] = "	<a href=http://invl.co/ttdb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/BolehCompare_Maxis_300250_End_Generic.jpg></a>	";
-      images[2] = "	<a href=http://invl.co/qtdb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/BolehCompare_Time_300250_End_Generic.jpg></a>	";
-      images[3] = "	<a href=http://invl.co/otdb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/BolehCompare_TMunifi_300250_End_Generic.jpg></a>	";
-      images[4] = "	<a href=http://invl.co/qjcb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/6957-LazadaMY_2017GHuaweiP10_300250_End_Generic.jpg></a>	";
-      images[5] = "	<a href=http://invl.co/pjcb target=_blank><img src=https://img.involve.asia/rpss/campaigns_banners/6959-LazadaMY_20175thBirthday_300250_End_24Mar2017.jpg></a>	";
-      index = Math.floor(Math.random() * images.length);
 
-      let advert = document.querySelector(".ads");
+        index1 = Math.floor(Math.random() * images.length);
 
-      advert.innerHTML = images[index];
-  </script>
+        let advert1 = document.querySelector(".ads1");
+
+        advert1.innerHTML = images[index1];
+
+
+        index2 = Math.floor(Math.random() * images.length);
+
+        let advert2 = document.querySelector(".ads2");
+
+        advert2.innerHTML = images[index2];
+</script>
+
+
+  
+
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  
+  <!--Boxicon -->
+  <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+
 </body>
  </html>

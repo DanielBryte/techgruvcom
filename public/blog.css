@@ -27,6 +27,36 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Poppins", sans-serif;
 }
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background: #0122ed;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #000000;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
 
 
 /*--------------------------------------------------------------
@@ -60,15 +90,15 @@ h1, h2, h3, h4, h5, h6 {
   color: blue;
   text-decoration: none;
 }
-#header .logo h1 a span, #header .logo h1 a span {
-  color: #000000;
-}
+
 #header .logo img {
   padding: 0;
   margin: 0;
   max-height: 30px;
   
 }
+
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -100,6 +130,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
   transition: 0.3s;
 }
+
 .navbar a i, .navbar a:focus i {
   font-size: 12px;
   line-height: 0;
@@ -108,73 +139,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
   color: rgb(0, 0, 0);
 }
-.navbar .getstarted, .navbar .getstarted:focus {
-  background: #ffffff;
-  color: blue;
-  padding: 4px 25px 6px 25px;
-  margin-left: 30px;
-  border-radius: 10px;
-  border: 2px solid blue;
-}
-.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
-  background: blue;
-  color: white;
-}
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 14px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.5s;
-  border-radius: 4px;
-}
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-.navbar .dropdown ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  font-weight: 500;
-  color: #000000;
-}
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: blue;
-}
-.navbar .dropdown:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-.navbar .dropdown .dropdown:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-  .navbar .dropdown .dropdown:hover > ul {
-    left: -100%;
-  }
-}
+
 
 /**
 * Mobile Navigation 
@@ -270,6 +235,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
+
 
 
 
@@ -526,10 +492,10 @@ footer .footer-bottom .legal ul{
   display: flex;
   align-items: center;
   justify-content:flex-end;
+  color: #0122ed !important;
 }
 .side_body .media i:last-child{
   font-size: 1.8rem;
-  color: black;
   position: absolute;
   right: 0;
   top: auto;
@@ -551,16 +517,35 @@ footer .footer-bottom .legal ul{
 /*** SIDE BAR **/
 /*** SIDE BAR **/
 
+
+
+
+
 /***Utiities***/
 /***Utiities***/
 .snippet__tag{
   margin-top: 0.6rem;
-  background-color: #0629f0;
+  background-color: #0122ed;
   color: #e1e1e1;
   font-size: 0.8rem;
-  width: fit-content;
   padding: 0.8px 0.3rem;
-  font-weight: 500;
+  width: fit-content;
+  padding-left: -200px !important;
+}
+
+
+.snippet__tag span{
+  color: #0122ed;
+  background-color: #0122ed;
+  position: absolute;
+}
+
+.snippet__tag i{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #e1e1e1;
+  background-color: #0122ed;
+  position: absolute;
 }
 
 .snippet__btn{
@@ -583,6 +568,9 @@ footer .footer-bottom .legal ul{
 .small h3 {
   font-size: 1rem;
 }
+.medium h3{
+  font-size: 1.2rem;
+}
 
 .cat a{
   font-size: 0.9rem;
@@ -595,7 +583,6 @@ footer .footer-bottom .legal ul{
   font-size: 1.1rem;
 }
 
-/***Utiities***/
 
 .advert{
   display: flex;
@@ -610,7 +597,20 @@ img {
 
 .article-tag{
   background-color: #0122ed;
+  color: white;
 }
+.share-button a{
+  font-size: 2rem;
+}
+
+.video img{
+  border: 5px solid #0122ed;
+  border-radius: 5px;
+}
+
+/***Utiities***/
+/***Utiities***/
+
 
 /**Blog CSS **/
 .blog .title{

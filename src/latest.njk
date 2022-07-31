@@ -11,79 +11,13 @@ layout: 'base.njk'
               <a href="./blog" class="title">Latest articles</a>
               </div>
               <div class="row row-cols-lg-3 mt-4 small">
-                <div> <li>
-                  <article class="snippet">
-                    <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                        <p class="snippet__tag">Business</p>
-                        <h3 class="snippet__title mt-3 ">Essential reasons why your business should have a website.</h3>
 
-                        <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                  </article>
-                </li></div>
-                <div>        <li>
-                  <article class="snippet">
-                    <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                        <p class="snippet__tag">Business</p>
-                        <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                        <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                  </article>
-                </li></div>
-                <div>        <li>
-                  <article class="snippet">
-                    <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                        <p class="snippet__tag">Business</p>
-                        <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                        <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                  </article>
-                </li></div>
-                <div><li>
-                  <article class="snippet">
-                    <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                        <p class="snippet__tag">Business</p>
-                        <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                        <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                  </article>
-                </li></div>
-                <div><li>
-                    <article class="snippet">
-                      <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                          <p class="snippet__tag">Business</p>
-                          <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                          <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                    </article>
-                  </li></div>
-                  <div><li>
-                    <article class="snippet">
-                      <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                          <p class="snippet__tag">Business</p>
-                          <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                          <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                    </article>
-                  </li></div>
-                  <div><li>
-                    <article class="snippet">
-                      <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                          <p class="snippet__tag">Business</p>
-                          <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                          <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                    </article>
-                  </li></div>
-                  <div><li>
-                    <article class="snippet">
-                      <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                          <p class="snippet__tag">Business</p>
-                          <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                          <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                    </article>
-                  </li></div>
-                                 <div><li>
-                  <article class="snippet">
-                    <img src="/public/assets/img/blog-coming-soon (1).png" class="snippet__image" alt="This is a test">
-                        <p class="snippet__tag">Business</p>
-                        <h3 class="snippet__title fh1 mt-3 ">Essential reasons why your business should have a website.</h3>
-                        <p class="snippet__meta">by <span>Daniel Bryte</span> on <span>Jun 15, 2021</span></p>
-                  </article>
-                </li></div>
+  {%- for post in collections.post -%}
+
+    {% include 'article-snippet.njk' %}
+
+  {%- endfor %}
+                
               </div>
             </div>
           </section>
