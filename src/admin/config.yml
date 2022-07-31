@@ -5,8 +5,8 @@ media_folder: "public/assets/img/posts"
 public_folder: "/assets/img/posts"
 collections:
 - name: "blog"
-  label: "blog"
-  folder: "src/posts"
+  label: "Blog"
+  folder: "./src/blog/"
   create: true
   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
   fields: 
