@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>TechGruv - Just Technopreneurship</title>
+  <meta content="" name="web services">
+  <meta content="" name="technology, business">
+
+  <!--font awesome-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/order.css">
+
+  <script src="/assets/js/checkout.js"></script>
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo ms-lg-0">
+        <h1>
+          <img src="/assets/img/logo.png" alt="logo">
+          <a href="/">TechGruv</a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/services/">Services</a></li>
+          <li><a class="nav-link scrollto" href="/affliate/">Refer and earn</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+ <div class="container mt-3">
+   <div class="row order-section">
+     <a class="col text-white" href="/web-service/" style="background-color: rgb(45, 45, 45);">Web Services</a>
+     <a class="col" href="/design-service/">Design services</a>
+     <a class="col" href="/marketing-service">Marketing Services</a>
+     <a class="col" href="/printing-service">Printing services</a>
+   </div>
+ </div>
+
+  <!--Start of swiper slide-->
+<div class="container-order container mt-3 mb-5">
+ <div class="d-flex flex-column payoption">
+     <div class="row">
+         <h4 class="mb-4 text-start">Choose payment options:</h4>
+        
+           <div class="form-check form-check-inline ps-5 mb-3">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="card" value="Card" checked>
+                <label class="form-check-label" for="card">Multiple options (Card, bank transfer, USSD, etc...)</label>
+            </div>
+
+
+            <div class="form-check form-check-inline ps-5 mb-3">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="paypal" value="paypal" disabled>
+                <label class="form-check-label" for="paypal">Paypal (coming soon)</label>
+            </div> 
+
+            <div class="form-check form-check-inline ps-5 ">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="Cryptocurrency" value="Cryptocurrency" disabled>
+                <label class="form-check-label" for="Cryptocurrency">Cryptocurrency (coming soon)</label>
+            </div>  
+     </div>
+ </div>
+
+
+
+
+
+    <div class="card mt-3">
+        <div class="card-body webcheckout">
+            <div class="card-header text-center">Check out and confirm purchase</div>
+                    <div class="card-text row mt-2">
+
+                            <form id="webForm" method="POST" action="">
+                                <div class="input-group mt-3 mb-3">
+                                  <label class="input-group-text" for="webname">Name<span class="required">*</span></label>
+                                  <input type="text" id="webname" class="form-control" placeholder="" aria-label="Input your name for contacting you" required>
+                                </div>
+    
+                                <div class="input-group mt-3 mb-3">
+                                  <label class="input-group-text" for="webemail">Email<span class="required">*</span></label>
+                                  <input type="email" id="webemail" class="form-control" placeholder="" aria-label="Input your name for contacting you" required>
+                                </div>
+
+                                <div class="input-group mt-3 mb-3">
+                                    <label class="input-group-text" for="webnumber">Phone<span class="required">*</span></label>
+                                    <input type="text" id="webnumber" class="form-control" placeholder="" aria-label="Input your number for contacting you" required>
+                                </div>
+
+                                <div class="form-group mt-3 mb-3">
+                                    <label for="description">Description<span class="required">*</span></label>
+                                    <textarea class="form-control" id="description" rows="7" placeholder="Describe  your site here" required></textarea>
+                                </div>
+                                
+                                    
+                                <div class="input-group mb-2">
+                                    <input type="text" class="form-control" name="Your referral code" id="webRefCode" placeholder="Any referral code? (optional)">
+                              </div>
+
+                          <div class="input-group mb-2 mt-3 price">
+                            <input type="text" class="form-control" placeholder="Price:" aria-label="price" aria-describedby="price" disabled>
+                            <span class="input-group-text">&#8358;</span>
+                            <span class="input-group-text" id="webamount"> </span>
+                          </div>
+                          <div class="button text-center mt-4 mx-auto">
+                            <button type="submit" class="btn btn-primary btn-purchase mb-2"><i class="bx bx-cart" aria-hidden="true" pr-2></i>Purchase now</button>
+                          </div>
+                     </form> 
+
+                    </div>
+           </div>
+          </div>
+        </div>
+    </div>
+
+    
+
+
+  
+
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/js/order.js"></script>
+
+  <!-- Main JS /File -->
+  <script src="/assets/js/main.js"></script>
+
+  <script src="/assets/js/webform.js"></script>
+
+
+
+  <!--Flutterwave JS-->
+  <script src="https://checkout.flutterwave.com/v3.js"></script>
+
+</body>
+
+</html>
+
