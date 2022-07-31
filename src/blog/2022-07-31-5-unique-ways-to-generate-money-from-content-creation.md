@@ -1,7 +1,7 @@
 ---
 title: 5 unique ways to generate money from
 author: Daniel Bryte
-tags: [Business]
+tags: [post,Business]
 image: /assets/img/posts/4.png
 imageAlt: TechGruv
 ---
