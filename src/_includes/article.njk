@@ -10,12 +10,12 @@ layout: 'base.njk'
             <div class="col-12 col-md-7 col-lg-8">
 
 
-                <article class="snippet">
-                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>{{ tags }}</p>
+                <article class="snippet d-flex">
+                    <p class=" me-2 ps-1 pe-1">{{ tags }}</p>
+                    <p class="snippet-meta">by<span class="author">{{post.data.author}}</span> on <span>{{ post.date | postDate }}</span></p>
                 </article>
-                <h3 class="article-title mt-2 mb-3">{{ title }}</h3>
-                <p class="snippet-meta">by <a href="/author/"><span class="author">{{ author}}</span></a></p>
-
+                <h3 class="article-title mt-2 mb-5">{{ title }}</h3>
+                
                 {% include 'share-button.njk' %}
 
 
