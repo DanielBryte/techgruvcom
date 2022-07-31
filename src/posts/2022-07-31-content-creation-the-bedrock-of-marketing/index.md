@@ -1,7 +1,6 @@
 ---
 title: "Content Creation: The bedrock of marketing"
 author: Daniel Bryte
-date: 2022-07-19T23:27:36.237Z
 tags:  "Business"
 image: /assets/img/posts/3.png
 imageAlt:  A group of business men/Image source:Freepik
