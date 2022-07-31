@@ -1,7 +1,7 @@
 ---
 title: "The dark side of technology: what you cannot see"
 author: Daniel Bryte
-tags:  [post, Technology]
+tags:  [ Technology]
 image: /assets/img/posts/6.png
 imageAlt:  ImageSource/Istock.com
 ---

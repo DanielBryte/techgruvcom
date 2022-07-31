@@ -1,7 +1,7 @@
 ---
 title: 5 Essential Need Of a Website You
 author: Daniel Bryte
-tags:  [post,Business]
+tags:  [Business]
 image: /assets/img/posts/2.png
 imageAlt:  A group of business men/Image source:Freepik
 ---

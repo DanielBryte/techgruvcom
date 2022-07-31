@@ -2,7 +2,7 @@
 title: "
 Programmers are not hackers: 7 Misconception About Programmers"
 author: Daniel Bryte
-tags:  [post,Technology]
+tags:  [Technology]
 image: /assets/img/posts/7.png
 imageAlt:  A programmer and a hacker
 ---
