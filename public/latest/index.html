@@ -307,7 +307,54 @@
         advert2.innerHTML = images[index2];
 </script>
 
+<script>
+  
+// Write Javascript code!
+var pageUrl = encodeURIComponent(document.URL);
+var pageTitle = encodeURIComponent(document.title);
 
+const fb = document.getElementById('fb');
+fb.addEventListener('click', shareOnFacebook);
+
+const linkedin = document.getElementById('linkedin');
+linkedin.addEventListener('click', shareOnLinkedin);
+
+const tweet = document.getElementById('twitter');
+tweet.addEventListener('click', shareOnTwitter);
+
+const whatsapp = document.getElementById('whatsapp');
+whatsapp.addEventListener('click', shareOnWhatsapp);
+
+
+function shareOnFacebook() {
+  const navUrl =
+    'https://www.facebook.com/sharer/sharer.php?u=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnTwitter() {
+  const navUrl =
+    'https://twitter.com/intent/tweet?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnLinkedin() {
+  const navUrl =
+    'https://linkedin.com/share?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnWhatsapp() {
+  const navUrl =
+    'whatsapp://send?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+</script>
   
 
 

@@ -171,24 +171,24 @@
                 <a href="/latest/" class="title">Read more</a>
                 </div>
                 <div class="row row-cols-lg-4 row-4 mt-4 small">         <article class="snippet">
-                <a href="/blog/2022-07-31-these-tech-trends-are-the-next-big-thing/"><img src="/assets/img/posts/8.png" class="snippet__image" alt="Next big tech trends"></a>
-                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Technology</p>
-                <a href="/blog/2022-07-31-these-tech-trends-are-the-next-big-thing/"><h3 class="snippet__title mt-3 ">These tech trends are the next big thing</h3></a>
-            <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
-          </article>         <article class="snippet">
-                <a href="/blog/2022-07-31-the-dark-side-of-technology-what-we-cannot-see/"><img src="/assets/img/posts/6.png" class="snippet__image" alt="ImageSource/Istock.com"></a>
-                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Technology</p>
-                <a href="/blog/2022-07-31-the-dark-side-of-technology-what-we-cannot-see/"><h3 class="snippet__title mt-3 ">The dark side of technology: what you cannot see</h3></a>
-            <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
-          </article>         <article class="snippet">
-                <a href="/blog/2022-07-31-personal-branding-vs-corporate-branding-which-is-the-best/"><img src="/assets/img/posts/5.png" class="snippet__image" alt="Business-Vs-Corporate-branding"></a>
+                <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><img src="/assets/img/posts/4.png" class="snippet__image" alt="TechGruv"></a>
                 <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
-                <a href="/blog/2022-07-31-personal-branding-vs-corporate-branding-which-is-the-best/"><h3 class="snippet__title mt-3 ">Personal branding Vs Corporate branding: Which is the best?</h3></a>
+                <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><h3 class="snippet__title mt-3 ">5 unique ways to generate money from</h3></a>
             <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
           </article>         <article class="snippet">
-                <a href="/blog/2022-07-31-misconception-about-programmers/"><img src="/assets/img/posts/7.png" class="snippet__image" alt="A programmer and a hacker"></a>
-                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Technology</p>
-                <a href="/blog/2022-07-31-misconception-about-programmers/"><h3 class="snippet__title mt-3 "> Programmers are not hackers: 7 Misconception About Programmers</h3></a>
+                <a href="/blog/2022-07-31-Essentials-Needs-Of-a-Website/"><img src="/assets/img/posts/2.png" class="snippet__image" alt="A group of business men/Image source:Freepik"></a>
+                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
+                <a href="/blog/2022-07-31-Essentials-Needs-Of-a-Website/"><h3 class="snippet__title mt-3 ">5 Essential Need Of a Website You</h3></a>
+            <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
+          </article>         <article class="snippet">
+                <a href="/blog/2022-07-31-all-you-need-to-know-about-techgruv/"><img src="/assets/img/posts/1.png" class="snippet__image" alt="TechGruv"></a>
+                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Featured,Technology</p>
+                <a href="/blog/2022-07-31-all-you-need-to-know-about-techgruv/"><h3 class="snippet__title mt-3 ">All you need to know about TechGruv</h3></a>
+            <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
+          </article>         <article class="snippet">
+                <a href="/blog/2022-07-31-content-creation-the-bedrock-of-marketing/"><img src="/assets/img/posts/3.png" class="snippet__image" alt="A group of business men/Image source:Freepik"></a>
+                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
+                <a href="/blog/2022-07-31-content-creation-the-bedrock-of-marketing/"><h3 class="snippet__title mt-3 ">Content Creation: The bedrock of marketing</h3></a>
             <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
           </article>
 
@@ -403,7 +403,54 @@
         advert2.innerHTML = images[index2];
 </script>
 
+<script>
+  
+// Write Javascript code!
+var pageUrl = encodeURIComponent(document.URL);
+var pageTitle = encodeURIComponent(document.title);
 
+const fb = document.getElementById('fb');
+fb.addEventListener('click', shareOnFacebook);
+
+const linkedin = document.getElementById('linkedin');
+linkedin.addEventListener('click', shareOnLinkedin);
+
+const tweet = document.getElementById('twitter');
+tweet.addEventListener('click', shareOnTwitter);
+
+const whatsapp = document.getElementById('whatsapp');
+whatsapp.addEventListener('click', shareOnWhatsapp);
+
+
+function shareOnFacebook() {
+  const navUrl =
+    'https://www.facebook.com/sharer/sharer.php?u=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnTwitter() {
+  const navUrl =
+    'https://twitter.com/intent/tweet?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnLinkedin() {
+  const navUrl =
+    'https://linkedin.com/share?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnWhatsapp() {
+  const navUrl =
+    'whatsapp://send?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+</script>
   
 
 

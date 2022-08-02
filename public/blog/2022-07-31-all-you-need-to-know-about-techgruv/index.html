@@ -161,8 +161,7 @@
             <div class="col-12 col-md-6 col-lg-8 text-start mb-5 pe-lg-5 mt-2">
 
 
-                <p>TechGruv, Just Technopreneurship, is a digital and media agency.</p>
-<!--EndFragment-->
+                
 
                 <section class="mt-5">
             <div class="container blog">
@@ -402,7 +401,54 @@
         advert2.innerHTML = images[index2];
 </script>
 
+<script>
+  
+// Write Javascript code!
+var pageUrl = encodeURIComponent(document.URL);
+var pageTitle = encodeURIComponent(document.title);
 
+const fb = document.getElementById('fb');
+fb.addEventListener('click', shareOnFacebook);
+
+const linkedin = document.getElementById('linkedin');
+linkedin.addEventListener('click', shareOnLinkedin);
+
+const tweet = document.getElementById('twitter');
+tweet.addEventListener('click', shareOnTwitter);
+
+const whatsapp = document.getElementById('whatsapp');
+whatsapp.addEventListener('click', shareOnWhatsapp);
+
+
+function shareOnFacebook() {
+  const navUrl =
+    'https://www.facebook.com/sharer/sharer.php?u=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnTwitter() {
+  const navUrl =
+    'https://twitter.com/intent/tweet?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnLinkedin() {
+  const navUrl =
+    'https://linkedin.com/share?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnWhatsapp() {
+  const navUrl =
+    'whatsapp://send?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+</script>
   
 
 
