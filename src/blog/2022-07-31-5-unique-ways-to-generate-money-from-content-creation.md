@@ -3,11 +3,11 @@ title: 5 unique ways to generate money as a content creator
 description: Not the old boring ways of making money off content, here are some
   unique ways to maximize income as a content creator
 author: Daniel Bryte
-date: 2022-08-05T23:05:00.698Z
+date: 2022-07-30T23:05:00.698Z
 tags:
   - Business
 image: /assets/img/posts/4.png
-imageAlt: TechGruv
+imageAlt: "Image Source: Freepik"
 ---
 No doubt content creation is one of the lucrative stuff you can do and make passive incomes online, thanks to several digital platforms making this possible, but let's do away with the common ways of generating money from content creation, as a content creator there hundreds of possible ways to make your content and audience profitable to you. 
 
