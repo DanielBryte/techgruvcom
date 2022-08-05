@@ -1,7 +1,7 @@
 ---
 title: 5 unique ways to generate money as a content creator
-description: In this article, I gathered unique ways to generate more incomes as
-  a content creator
+description: Not the old boring ways of making money off content, here are some
+  unique ways to maximize income as a content creator
 author: Daniel Bryte
 date: 2022-08-05T23:05:00.698Z
 tags:
