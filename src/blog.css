@@ -164,7 +164,7 @@ h6 {
 .navbar li:hover>a {
   color: rgb(0, 0, 0);
 }
-/****** Search Button******/
+
 .navbar a i {
   color: black;
   font-size: 1.2rem !important;
@@ -172,6 +172,20 @@ h6 {
   padding: 0 !important;
 }
 
+/****** Search Button******/
+.navbar button{
+  border: 0;
+  background: transparent;
+  position: fixed;
+  top: 13px;
+  right: 55px;
+  color: #0122ed;
+}
+@media (min-width:1000px) {
+  .navbar button{
+    position: static !important;
+  }
+}
 
 /*** Search Form **/
 .search-form{
@@ -184,7 +198,7 @@ h6 {
   right: 0;
   width: 50%;
   border: 0;
-  outline: #0122ed solid 2px;
+  outline: #0122ed solid 1px;
   height: 50px;
 }
 
@@ -197,8 +211,15 @@ h6 {
   color: #0629f0;
   font-size: 28px;
   cursor: pointer;
+  position: fixed;
+  top: 8px;
+  right: 55px;
 }
-
+@media (min-width:1000px) {
+  .search-close{
+    position: static !important;
+  }
+}
 /***search Close**/
 
 @media (max-width: 600px) {
@@ -206,15 +227,6 @@ h6 {
     width: 100%;
     margin: 0;
   }
-}
-
-.navbar button{
-  border: 0;
-  background: transparent;
-  position: fixed;
-  top: 12px;
-  right: 50px;
-  color: #0122ed;
 }
 
 /**
@@ -225,6 +237,9 @@ h6 {
   font-size: 28px;
   cursor: pointer;
   display: none;
+  position: fixed;
+  top: 13px;
+  right: 15px;
   line-height: 0;
   transition: 0.5s;
   border: 0;
@@ -251,12 +266,6 @@ h6 {
   background: rgba(18, 33, 46, 0.9);
   transition: 0.3s;
   z-index: 999;
-}
-
-.navbar-mobile .mobile-nav-toggle {
-  position: absolute;
-  top: 12px;
-  right: 15px;
 }
 
 
