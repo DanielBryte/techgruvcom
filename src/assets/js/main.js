@@ -13,6 +13,9 @@
     }
   }
 
+
+  /** search Bar **/
+
   /**
    * Easy event listener function
    */
@@ -83,6 +86,9 @@
   /**
    * Back to top button
    */
+
+
+
    let whatsapp = select('.whatsapp')
    if (whatsapp) {
      const toggleWhatsapp = () => {
@@ -237,4 +243,17 @@ accordionBtns.forEach((accordion) => {
   };
 });
 
+
+ 
+function openSearch() {
+  document.querySelector(".search-form").style.display = "block";
+  document.querySelector(".search-bar").style.display = "none";
+  document.querySelector(".search-close").style.display = "block";
+}
+
+function closeSearch() {
+  document.querySelector(".search-close").style.display = "none";
+  document.querySelector(".search-bar").style.display = "block";
+  document.querySelector(".search-form").style.display = "none";
+}
 

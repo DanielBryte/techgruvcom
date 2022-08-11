@@ -71,8 +71,11 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  z-index: 997;
-  transition: all 0.5s;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9998;  
   padding: 0px 0;
   background: #ffffff;
 }
@@ -161,7 +164,47 @@ h6 {
 .navbar li:hover>a {
   color: rgb(0, 0, 0);
 }
+/****** Search Button******/
+.navbar a i {
+  color: black;
+  font-size: 1.2rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
 
+
+/*** Search Form **/
+.search-form{
+  display: none;
+}
+
+.search-form{
+  position: fixed !important;
+  top: 40px;
+  right: 0;
+  width: 50%;
+  border: 0;
+  outline: #0122ed solid 2px;
+}
+
+/*** Search Form **/
+/*** Search Form **/
+
+@media (max-width: 600px) {
+  .search-form{
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.navbar button{
+  border: 0;
+  background: transparent;
+  position: fixed;
+  top: 12px;
+  right: 50px;
+  color: #0122ed;
+}
 
 /**
 * Mobile Navigation 
@@ -173,10 +216,6 @@ h6 {
   display: none;
   line-height: 0;
   transition: 0.5s;
-  position: fixed;
-  right: 15px;
-  top: 10px;
-  z-index: 9998;
   border: 0;
 }
 
@@ -205,8 +244,16 @@ h6 {
 
 .navbar-mobile .mobile-nav-toggle {
   position: absolute;
-  top: 15px;
+  top: 12px;
   right: 15px;
+}
+
+/**** Search Close ***/
+.search-close{
+  display: none;
+  color: #0629f0;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .navbar-mobile ul {
@@ -224,7 +271,6 @@ h6 {
 
 .navbar-mobile a,
 .navbar-mobile a:focus {
-  padding: 10px 20px;
   font-size: 15px;
   color: #0629f0;
 }
@@ -281,7 +327,10 @@ h6 {
 
 
 
-
+/****** ******/
+.home-section{
+ margin-top: 70px !important;
+}
 
 
 
