@@ -185,10 +185,21 @@ h6 {
   width: 50%;
   border: 0;
   outline: #0122ed solid 2px;
+  height: 50px;
 }
 
 /*** Search Form **/
 /*** Search Form **/
+
+/**** Search Close ***/
+.search-close{
+  display: none;
+  color: #0629f0;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/***search Close**/
 
 @media (max-width: 600px) {
   .search-form{
@@ -248,13 +259,6 @@ h6 {
   right: 15px;
 }
 
-/**** Search Close ***/
-.search-close{
-  display: none;
-  color: #0629f0;
-  font-size: 28px;
-  cursor: pointer;
-}
 
 .navbar-mobile ul {
   display: block;
