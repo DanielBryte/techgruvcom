@@ -1,0 +1,15 @@
+---
+layout: "base.njk"
+title: Search Page
+permalink:
+  search: /search/
+---
+
+<h2 class="mb-3">This list is built at request from the query "{{ eleventy.serverless.query.query }}"</h2>
+
+{% assign results = eleventy.serverless.query.query | getResults %}
+<div class="card-grid">
+  {% for result in results %}
+    {% include "article.njk" %}
+  {% endfor %}
+</div>

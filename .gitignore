@@ -9,3 +9,8 @@ node_modules
 
 # macOS related files
 .DS_Store
+
+#eleventy Search
+netlify/functions/search/**  
+!netlify/functions/search/index.js
+

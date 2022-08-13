@@ -1,0 +1,65 @@
+---
+layout: 'base.njk'
+---
+
+<article class="main-article">
+    <div class="container mt-5 mb-5">
+
+        <div class="row">
+
+            <div class="col-12 col-md-7 col-lg-8">
+
+
+                <article class="snippet">
+                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>{{ tags }}</p>
+                </article>
+                <h3 class="article-title mt-2 mb-3">{{ title }}</h3>
+                <p class="snippet-meta">by <a href="/author/"><span class="author">{{ author}}</span></a></p>
+
+                {% include 'share-button.njk' %}
+
+
+                <figure class="mb-5">
+                    <img src="{{ image }}" alt="{{post.data.imageAlt}}">
+                    <figcaption>
+                        {{imageAlt}}
+                        <!-- A group of business men/Image source: Freepik -->
+                    </figcaption>
+                </figure>
+            </div>
+
+            <div class="col-12 col-md-5 col-lg-4 mt-lg-5">
+                {% include 'community1.njk' %}
+            </div>
+        </div>
+
+        <div class="d-flex flex-column flex-lg-row">
+            <div class="col-12 col-md-6 col-lg-8 text-start mb-5 pe-lg-5 mt-2">
+
+
+                {{ content | safe}}
+
+                <section class="mt-5">
+            <div class="container blog">
+                <div class="d-flex align-items-center justify-content-between cat">
+                <a href="/latest/" class="title">Read more</a>
+                </div>
+                <div class="row row-cols-lg-4 row-4 mt-4 small">
+
+                {%- for post in collections.post.reverse() | limit(4)   -%}
+
+                {% include 'article-snippet.njk' %}
+
+                {%- endfor %}
+
+                </div>
+            </div>
+            </section>
+            </div>
+
+                {% include 'advert.njk' %}
+
+            </div>
+        </div>
+    </div>
+</article>
