@@ -266,21 +266,5 @@ function closeSearch() {
 
 
 
-function pushSearch() {
-
-  document.getElementById("search-input").oninput = () => {
-
-    const searchInput = document.getElementById('search-input');
-    const output = document.getElementById('search-posts');
  
-    output.value = searchInput.value;
-  }
-};
-  // document.querySelector('#search-posts').innerText = searchInput;
 
-  
-  
-
-  //   const input = document.getElementById('input');
-  //   const output = document.getElementById('output');
- 

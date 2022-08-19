@@ -63,9 +63,9 @@
       <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
     </div>
     
-        <form class="search-body">
-          <input class="ps-4 search-form" id="search-posts" type="search" placeholder="Search">
-        </form>
+        <span class="search-body">
+          <input class="ps-4 search-form search-posts" type="text" placeholder="Search">
+        </span>
     </nav>
 
     <!-- .navbar -->
@@ -77,7 +77,7 @@
 <section class="mt-5 pt-5">
             <div class="container blog">
               <div class="d-flex align-items-center cat ">
-              <a href="./blog" class="title">Your search</a>
+              <span class="title">You searched for <input type="text" name="search" id="search-posts"></span>
               </div>
               <div class="row row-cols-lg-3 mt-4 small">         <article class="snippet article-snippet">
                 <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><img src="/assets/img/posts/4.png" class="snippet__image" alt="Image Source: Freepik"></a>
@@ -325,6 +325,17 @@ input.addEventListener('input', search);
   
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+
+  <script>
+   window.addEventListener('load', () => {
+ 
+ const searchInput = sessionStorage.getItem('searchValue');
+ 
+ document.getElementById('search-posts').innerHTML= searchInput;
+
+})
+</script> 
 
 
 </body>
