@@ -1,41 +1,36 @@
 <body>
 
 
-    <!-- ======= Header ======= -->
+      <!-- ======= Header ======= -->
   <header id="header">
     <div class="container d-flex align-items-center justify-content-between">
-      <div class="logo ms-lg-0 col-12 col-md-6 col-lg-8">
+
+      <div class="logo ms-lg-0">
         <h1>
           <img src="/assets/img/logo.png" alt="logo">
-          <a href="/">TechGruv.</a></h1>
+          <a href="/">TechGruv</a></h1>
       </div>
 
-      <nav id="navbar" class="navbar col-12 col-md-6 col-lg-4">
+      <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link" href="/">Home</a></li>
-          <li><a class="nav-link" href="/latest/">Latest</a></li>
-          <li><a class="nav-link" href="/business/">Business</a></li>
-          <li><a class="nav-link pe-3" href="/technology/">Technology</a></li>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about/">About Us</a></li>
+          <li><a class="nav-link scrollto" href="/services/">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="/"><span>Blog</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/business/">Business</a></li>
+              <li><a href="/technology/">Technology</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto ms-3 pe-4 text-black refer text-center" href="/affiliate/">Refer and earn</a></li>
+          <li><a class="getstarted scrollto" href="/services">Get Started</a></li>
         </ul>
-
-        <i class="bi bi-x search-close"  onclick="closeSearch()"></i>
-
         <i class="bi bi-list mobile-nav-toggle"></i>
-
-
-      <button onclick="openSearch()"><i class="bi bi-search search-bar"></i></button>
-      <form action="/search/">
-      <input type="search" class="search-form ps-2" placeholder="Search">
-       </form>
-
-      </nav>
-      <!-- .navbar -->
+      </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
-
-
-  
 
     <main>
           
@@ -245,7 +240,7 @@
                             <span class="input-group-text" id="amount">50000</span>
                           </div>
                           <div class="button text-center mt-4">
-                             <a href="web-checkout.html" type="submit" class="btn btn-primary text-center btn-purchase mb-2" onclick="handleSubmit()">Proceed<i class='bx bx-right-arrow-alt' style='color:#ffffff'></i></a>
+                             <a href="/web-checkout" type="submit" class="btn btn-primary text-center btn-purchase mb-2" onclick="handleSubmit()">Proceed<i class='bx bx-right-arrow-alt' style='color:#ffffff'></i></a>
                           </div>
                         </form> 
                         </div>
@@ -299,7 +294,7 @@
                               <span class="input-group-text" id="samount">100000</span>
                             </div>
                             <div class="button text-center mt-4">
-                              <a href="web-checkout.html" type="submit" class="btn btn-primary text-center btn-purchase mb-2" onclick="handleSubmit1()">Proceed<i class='bx bx-right-arrow-alt' style='color:#ffffff'></i></a>
+                              <a href="/web-checkout/" type="submit" class="btn btn-primary text-center btn-purchase mb-2" onclick="handleSubmit1()">Proceed<i class='bx bx-right-arrow-alt' style='color:#ffffff'></i></a>
                            </div>
                          </form>
 
@@ -355,7 +350,7 @@
                               </div>
 
                               <div class="button text-center mt-4">
-                                <a href="web-checkout.html" type="submit" class="btn btn-primary text-center btn-purchase mb-2" onclick="handleSubmit2()">Proceed<i class='bx bx-right-arrow-alt' style='color:#ffffff'></i></a>
+                                <a href="/web-checkout/" type="submit" class="btn btn-primary text-center btn-purchase mb-2" onclick="handleSubmit2()">Proceed<i class='bx bx-right-arrow-alt' style='color:#ffffff'></i></a>
                              </div>
                             </form>
                         </div>

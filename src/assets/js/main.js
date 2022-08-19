@@ -120,6 +120,7 @@
     }
   }, true)
 
+
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
@@ -246,14 +247,33 @@ accordionBtns.forEach((accordion) => {
 
  
 function openSearch() {
-  document.querySelector(".search-form").style.display = "block";
+  document.querySelector(".search-body").style.display = "block";
   document.querySelector(".search-bar").style.display = "none";
   document.querySelector(".search-close").style.display = "block";
+
+  document.querySelector(".mobileOpen").style.display = "none";
+  document.querySelector(".mobileClose").style.display = "block";
 }
 
 function closeSearch() {
   document.querySelector(".search-close").style.display = "none";
   document.querySelector(".search-bar").style.display = "block";
-  document.querySelector(".search-form").style.display = "none";
+  document.querySelector(".search-body").style.display = "none";
+
+  document.querySelector(".mobileOpen").style.display = "block";
+  document.querySelector(".mobileClose").style.display = "none";
 }
 
+
+
+function pushSearch() {
+
+  const searchInput =  document.querySelectorAll("#search-input");
+
+  document.querySelector('#search-posts').innerText = searchInput;
+
+  searchInput.addEventListener('pushSearch', searchInput);
+
+    window.location.replace('/search')
+  }
+  

@@ -75,7 +75,7 @@ h6 {
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 9998;  
+  z-index: 9998;
   padding: 0px 0;
   background: #ffffff;
 }
@@ -139,7 +139,8 @@ h6 {
 }
 
 .navbar a,
-.navbar a:focus {
+.navbar a:focus,
+.navbar li i {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -151,13 +152,6 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar a i,
-.navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
@@ -165,37 +159,16 @@ h6 {
   color: rgb(0, 0, 0);
 }
 
-.navbar a i {
-  color: black;
-  font-size: 1.2rem !important;
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-/****** Search Button******/
-.navbar button{
-  border: 0;
-  background: transparent;
-  position: fixed;
-  top: 13px;
-  right: 55px;
-  color: #0122ed;
-}
-@media (min-width:1000px) {
-  .navbar button{
-    position: static !important;
-  }
-}
 
 /*** Search Form **/
-.search-form{
+.search-body {
   display: none;
 }
 
-.search-form{
+.search-form {
   position: fixed !important;
   top: 40px;
-  right: 0;
+  right: 15px;
   width: 50%;
   border: 0;
   outline: #0122ed solid 1px;
@@ -206,28 +179,50 @@ h6 {
 /*** Search Form **/
 
 /**** Search Close ***/
-.search-close{
+.navbar li i {
+  color: #0629f0;
+  cursor: pointer;
+}
+
+.navbar .search-close {
   display: none;
   color: #0629f0;
-  font-size: 28px;
   cursor: pointer;
-  position: fixed;
-  top: 8px;
-  right: 55px;
+
 }
-@media (min-width:1000px) {
-  .search-close{
-    position: static !important;
-  }
+
+.navbar #pushSearch {
+  display: inline;
 }
-/***search Close**/
 
 @media (max-width: 600px) {
-  .search-form{
+  .search-form {
     width: 100%;
     margin: 0;
   }
 }
+
+.search-body button {
+  position: fixed !important;
+  right: 0;
+  z-index: 1;
+  top: 40px;
+  border-radius: 1px;
+  outline: 0;
+  border: 0;
+  color: #e1e1e1;
+  background-color: #0122ed;
+  height: 50px;
+}
+
+.search-body button:hover{
+  background-color: #041dbf;
+  color: #e1e1e1;
+}
+
+
+
+
 
 /**
 * Mobile Navigation 
@@ -294,13 +289,6 @@ h6 {
   color: black;
 }
 
-.navbar-mobile .getstarted,
-.navbar-mobile .getstarted:focus {
-  margin: 15px;
-  display: block;
-  border: 0;
-}
-
 .navbar-mobile .dropdown ul {
   position: static;
   display: none;
@@ -335,14 +323,53 @@ h6 {
   display: block;
 }
 
+.navbar .mobile-search{
+  display: none;
+}
+@media (max-width: 600px) {
+  .navbar li i{
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar li i{
+    display: none;
+  }
+  .navbar .mobile-search{
+    display: block;
+  }
+  .navbar .mobile-search i{
+    display: block;
+    position: fixed !important;
+    top: 15px;
+    right: 55px;
+    color: #0629f0;
+    cursor: pointer;
+  }
+
+  
+  .navbar .mobile-search .mobileClose {
+    display: none;
+    
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 /****** ******/
-.home-section{
- margin-top: 70px !important;
+.home-section {
+  margin-top: 70px !important;
 }
 
 
@@ -788,52 +815,52 @@ img {
   height: auto;
   line-height: 1;
   letter-spacing: .1em;
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
 
-.notfound a{
-background-color: #0122ed;
-color: white;
-border: 2px solid #0122ed;
-padding: 10px;
-border-radius: 5px;
+.notfound a {
+  background-color: #0122ed;
+  color: white;
+  border: 2px solid #0122ed;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.notfound a:hover{
+.notfound a:hover {
   border: 2px solid #03040b;
   background-color: #03040b;
   color: white;
   padding: 10px;
   border-radius: 5px;
-  }
-  
-
-  .success {
-    text-align: center;
-    color: #0122ed;
-  }
-
-  .success-wrap{
-    font-size: 5rem;
-    border-radius: 10px;
-    padding: 50px;
-    background-color: #2C2C32;
-  }
-  .success-wrap i{
-    color: white
-  }
-
-  .success a{
-    background-color: blue;
-    padding: 10px 20px;
-    color: #fff;
-    font-weight: 800;
-    border-radius: 5px;
-    width: 50%
-  
-  }
+}
 
 
-  .success a:hover{
-background-color: #3148e4;
-  }
+.success {
+  text-align: center;
+  color: #0122ed;
+}
+
+.success-wrap {
+  font-size: 5rem;
+  border-radius: 10px;
+  padding: 50px;
+  background-color: #2C2C32;
+}
+
+.success-wrap i {
+  color: white
+}
+
+.success a {
+  background-color: blue;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 800;
+  border-radius: 5px;
+  width: 50%
+}
+
+
+.success a:hover {
+  background-color: #3148e4;
+}

@@ -76,16 +76,17 @@ layout: 'base.njk'
               </a>
               <a href="https://instagram.com/techgruv"><i class='bx bx-chevron-right'></i></a>
             </div>
-          </div>
+           </div>
 
-          <div class="d-flex flex-column align-items-center newsletter mt-4 d-none d-lg-block d-xl-block">
-            <h2 class="text-center">Newsletter</h2>
-            <span></span>
-            <p>Subscribe to TechGruv newsletter below</p>
-            <input type="text" class="mb-4" name="newsletter" id="newsletter" placeholder="Your email address">
-            <input type="button" value="Subscribe">
+            <div class="d-flex flex-column align-items-center newsletter mt-4 d-none d-lg-block d-xl-block">
+              <h2 class="text-center">Newsletter</h2>
+              <span></span>
+              <p>Subscribe to TechGruv newsletter below</p>
+              <input type="text" class="mb-4" name="newsletter" id="newsletter" placeholder="Your email address">
+              <input type="button" value="Subscribe">
+            </div>
           </div>
-        </div>
+      </div>
 
       </div>
     </div>
@@ -133,7 +134,7 @@ layout: 'base.njk'
       <div class="col-12 col-md-6 col-lg-6">
         {%- for post in collections.Business.reverse() | limit(1) -%}
 
-        {% include 'article-snippet.njk' %}
+        {% include 'big-article-snippet.njk' %}
 
         {%- endfor %}
 
@@ -161,6 +162,7 @@ layout: 'base.njk'
       <a href="./technology" class="d-flex align-items-center"><span>View all</span><i
           class='bx bx-chevron-right'></i></a>
     </div>
+    
     <div class="row mt-4 medium">
       <div class="col-12 col-md-6 col-lg-8 row row-cols-lg-2">
         {%- for post in collections.Technology.reverse() | limit(4) -%}

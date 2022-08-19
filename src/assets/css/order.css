@@ -198,7 +198,7 @@
 
 
 .card .card-body .form-check-inline input[type=radio] {
-    accent-color: blue;
+    accent-color: #1F0BFF !important;
 } 
 
 .card .card-body .orders{
