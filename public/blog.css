@@ -203,6 +203,8 @@ h6 {
 }
 
 .search-body button {
+  padding-left: 8px;
+  padding-right: 8px;
   position: fixed !important;
   right: 0;
   z-index: 1;
@@ -326,11 +328,7 @@ h6 {
 .navbar .mobile-search{
   display: none;
 }
-@media (max-width: 600px) {
-  .navbar li i{
-    display: none;
-  }
-}
+
 @media (max-width: 1000px) {
   .navbar li i{
     display: none;
@@ -351,6 +349,12 @@ h6 {
   .navbar .mobile-search .mobileClose {
     display: none;
     
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar li i{
+    display: none !important;
   }
 }
 

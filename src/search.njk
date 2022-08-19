@@ -51,23 +51,29 @@
         <li><a class="nav-link" href="/latest/">Latest</a></li>
         <li><a class="nav-link" href="/business/">Business</a></li>
         <li><a class="nav-link" href="/technology/">Technology</a></li>
+        <li><i class="bi bi-search search-bar" onclick="openSearch()"></i></li>
+        <li><i class="bi bi-x-lg search-close" onclick="closeSearch()"></i></li>
       </ul>
 
-      <i class="bi bi-x search-close" onclick="closeSearch()"></i>
 
       <i class="bi bi-list mobile-nav-toggle"></i>
 
-
-      <button onclick="openSearch()"><i class="bi bi-search search-bar"></i></button>
-
-      <form action="" method="get">
-        <input type="search" id="search-posts" class="search-form ps-2" placeholder="Search">
-      </form>
+    <div class="mobile-search">
+      <i class="bi bi-search mobileOpen" onclick="openSearch()"></i>
+      <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
+    </div>
+    
+        <form class="search-body">
+          <input class="ps-4 search-form" id="search-posts" type="search" placeholder="Search">
+        </form>
     </nav>
+
     <!-- .navbar -->
 
   </div>
-</header>
+</header><!-- End Header -->
+
+
 <section class="mt-5 pt-5">
             <div class="container blog">
               <div class="d-flex align-items-center cat ">

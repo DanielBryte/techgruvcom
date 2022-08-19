@@ -268,12 +268,19 @@ function closeSearch() {
 
 function pushSearch() {
 
-  const searchInput =  document.querySelectorAll("#search-input");
+  document.getElementById("search-input").oninput = () => {
 
-  document.querySelector('#search-posts').innerText = searchInput;
-
-  searchInput.addEventListener('pushSearch', searchInput);
-
-    window.location.replace('/search')
+    const searchInput = document.getElementById('search-input');
+    const output = document.getElementById('search-posts');
+ 
+    output.value = searchInput.value;
   }
+};
+  // document.querySelector('#search-posts').innerText = searchInput;
+
   
+  
+
+  //   const input = document.getElementById('input');
+  //   const output = document.getElementById('output');
+ 

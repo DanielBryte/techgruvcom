@@ -26,9 +26,9 @@
       <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
     </div>
     
-        <form class="search-body">
+        <form class="search-body" method="get" action="/search">
           <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
-          <button onclick="pushSearch()" class="btn" type="button">Search</button>
+          <button onclick="pushSearch()" type="submit">Search</button>
         </form>
     </nav>
 
