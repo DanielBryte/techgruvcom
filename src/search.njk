@@ -78,7 +78,8 @@
         </div>
 
         <form class="search-body">
-          <!-- <input class="ps-4 search-form" id ="search-posts" type="text" placeholder="Search"> -->
+          <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
+          <a href="/search" onclick = "pushSearch()" type="submit">Search</a>
         </form>
       </nav>
 
@@ -92,7 +93,7 @@
     <div class="container blog">
       <div class="d-flex align-items-center cat ">
         <span class="title">You searched for
-          <p id="search-posts"></p>
+          <p>"<span id="search-posts"></span>"</p>
         </span>
 
       </div>

@@ -866,3 +866,10 @@ img {
 .success a:hover {
   background-color: #3148e4;
 }
+
+
+/**** SEARCH POST****/
+#search-posts{
+   color: #0122ed;
+   font-style: italic;
+}
