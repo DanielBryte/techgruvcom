@@ -63,9 +63,9 @@
       <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
     </div>
     
-        <form class="search-body" method="get" action="/search">
+        <form id="search-form" class="search-body" method="get" action="">
           <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
-          <button onclick="pushSearch()" type="submit">Search</button>
+          <a href="/search" onclick = "pushSearch()" type="submit">Search</a>
         </form>
     </nav>
 
@@ -84,14 +84,9 @@
               <a href="./blog" class="title">Business articles</a>
               </div>
               <div class="row row-cols-lg-3 mt-4 small">         <article class="snippet article-snippet">
-                <a href="/blog/2022-07-31-content-creation-the-bedrock-of-marketing/"><img src="/assets/img/posts/3.png" class="snippet__image" alt="A group of business men/Image source:Freepik"></a>
+                <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><img src="/assets/img/posts/4.png" class="snippet__image" alt="Image Source: Freepik"></a>
                 <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
-                <a href="/blog/2022-07-31-content-creation-the-bedrock-of-marketing/"><h3 class="snippet__title mt-3 ">Content Creation: The bedrock of marketing</h3></a>
-            <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
-          </article>         <article class="snippet article-snippet">
-                <a href="/blog/2022-07-31-personal-branding-vs-corporate-branding-which-is-the-best/"><img src="/assets/img/posts/5.png" class="snippet__image" alt="Business-Vs-Corporate-branding"></a>
-                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
-                <a href="/blog/2022-07-31-personal-branding-vs-corporate-branding-which-is-the-best/"><h3 class="snippet__title mt-3 ">Personal branding Vs Corporate branding: Which is the best?</h3></a>
+                <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><h3 class="snippet__title mt-3 ">5 unique ways to generate money as a content creator</h3></a>
             <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
           </article>         <article class="snippet article-snippet">
                 <a href="/blog/2022-07-31-Essentials-Needs-Of-a-Website/"><img src="/assets/img/posts/2.png" class="snippet__image" alt="A group of business men/Image source:Freepik"></a>
@@ -99,9 +94,14 @@
                 <a href="/blog/2022-07-31-Essentials-Needs-Of-a-Website/"><h3 class="snippet__title mt-3 ">5 Essential Need Of a Website You</h3></a>
             <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
           </article>         <article class="snippet article-snippet">
-                <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><img src="/assets/img/posts/4.png" class="snippet__image" alt="Image Source: Freepik"></a>
+                <a href="/blog/2022-07-31-personal-branding-vs-corporate-branding-which-is-the-best/"><img src="/assets/img/posts/5.png" class="snippet__image" alt="Business-Vs-Corporate-branding"></a>
                 <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
-                <a href="/blog/2022-07-31-5-unique-ways-to-generate-money-from-content-creation/"><h3 class="snippet__title mt-3 ">5 unique ways to generate money as a content creator</h3></a>
+                <a href="/blog/2022-07-31-personal-branding-vs-corporate-branding-which-is-the-best/"><h3 class="snippet__title mt-3 ">Personal branding Vs Corporate branding: Which is the best?</h3></a>
+            <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
+          </article>         <article class="snippet article-snippet">
+                <a href="/blog/2022-07-31-content-creation-the-bedrock-of-marketing/"><img src="/assets/img/posts/3.png" class="snippet__image" alt="A group of business men/Image source:Freepik"></a>
+                <p class="snippet__tag"><span>post,</span><i class='bx bxs-tag-alt' style='color:#ffffff' ></i>post,Business</p>
+                <a href="/blog/2022-07-31-content-creation-the-bedrock-of-marketing/"><h3 class="snippet__title mt-3 ">Content Creation: The bedrock of marketing</h3></a>
             <p class="snippet-meta">by <a href="/author/"><span class="author">Daniel Bryte</span></a> on <span>Jul 31, 2022</span></p>
           </article>
                 
@@ -362,15 +362,18 @@ function shareOnWhatsapp() {
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
+
 <script>
+  
 function pushSearch() {
-  const searchInput = document.getElementById("search-input").innerText;
-  // to set into local storage
-  /* localStorage.setItem("NAME", name); */
+      const form = document.getElementById("search-form")
+      const search = document.getElementById("search-input");
+      
+      const searchInput = search.value;
   
   sessionStorage.setItem("searchValue", searchInput);
-  return;
 }
 </script>
+
 </body>
  </html>

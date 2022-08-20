@@ -152,15 +152,18 @@ function shareOnWhatsapp() {
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
+
 <script>
+  
 function pushSearch() {
-  const searchInput = document.getElementById("search-input").innerText;
-  // to set into local storage
-  /* localStorage.setItem("NAME", name); */
+      const form = document.getElementById("search-form")
+      const search = document.getElementById("search-input");
+      
+      const searchInput = search.value;
   
   sessionStorage.setItem("searchValue", searchInput);
-  return;
 }
 </script>
+
 </body>
  </html>

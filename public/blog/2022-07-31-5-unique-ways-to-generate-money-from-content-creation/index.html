@@ -63,9 +63,9 @@
       <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
     </div>
     
-        <form class="search-body" method="get" action="/search">
+        <form id="search-form" class="search-body" method="get" action="">
           <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
-          <button onclick="pushSearch()" type="submit">Search</button>
+          <a href="/search" onclick = "pushSearch()" type="submit">Search</a>
         </form>
     </nav>
 
@@ -517,15 +517,18 @@ function shareOnWhatsapp() {
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
+
 <script>
+  
 function pushSearch() {
-  const searchInput = document.getElementById("search-input").innerText;
-  // to set into local storage
-  /* localStorage.setItem("NAME", name); */
+      const form = document.getElementById("search-form")
+      const search = document.getElementById("search-input");
+      
+      const searchInput = search.value;
   
   sessionStorage.setItem("searchValue", searchInput);
-  return;
 }
 </script>
+
 </body>
  </html>

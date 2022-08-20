@@ -16,7 +16,9 @@
   <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -31,115 +33,107 @@
   <!-- Blog CSS File -->
   <link href="/blog.css" rel="stylesheet">
 
+  <script>
+    window.addEventListener('load', () => {
+
+      var searchInput = sessionStorage.getItem('searchValue').toLowerCase();
+
+      document.getElementById('search-posts').innerText = searchInput;
+
+    })
+  </script>
+
+
 </head>
+
 <body>
 
 
-<!-- ======= Header ======= -->
-<header id="header">
-  <div class="container d-flex align-items-center justify-content-between">
-    <div class="logo ms-lg-0 col-12 col-md-6 col-lg-8">
-      <h1>
-        <img src="/assets/img/logo.png" alt="logo">
-        <a href="/">TechGruv.</a>
-      </h1>
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo ms-lg-0 col-12 col-md-6 col-lg-8">
+        <h1>
+          <img src="/assets/img/logo.png" alt="logo">
+          <a href="/">TechGruv.</a>
+        </h1>
+      </div>
+
+      <nav id="navbar" class="navbar col-12 col-md-6 col-lg-4">
+        <ul>
+          <li><a class="nav-link" href="/">Home</a></li>
+          <li><a class="nav-link" href="/latest/">Latest</a></li>
+          <li><a class="nav-link" href="/business/">Business</a></li>
+          <li><a class="nav-link" href="/technology/">Technology</a></li>
+          <li><i class="bi bi-search search-bar" onclick="openSearch()"></i></li>
+          <li><i class="bi bi-x-lg search-close" onclick="closeSearch()"></i></li>
+        </ul>
+
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <div class="mobile-search">
+          <i class="bi bi-search mobileOpen" onclick="openSearch()"></i>
+          <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
+        </div>
+
+        <form class="search-body">
+          <!-- <input class="ps-4 search-form" id ="search-posts" type="text" placeholder="Search"> -->
+        </form>
+      </nav>
+
+      <!-- .navbar -->
+
     </div>
-
-    <nav id="navbar" class="navbar col-12 col-md-6 col-lg-4">
-      <ul>
-        <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" href="/latest/">Latest</a></li>
-        <li><a class="nav-link" href="/business/">Business</a></li>
-        <li><a class="nav-link" href="/technology/">Technology</a></li>
-        <li><i class="bi bi-search search-bar" onclick="openSearch()"></i></li>
-        <li><i class="bi bi-x-lg search-close" onclick="closeSearch()"></i></li>
-      </ul>
+  </header><!-- End Header -->
 
 
-      <i class="bi bi-list mobile-nav-toggle"></i>
-
-    <div class="mobile-search">
-      <i class="bi bi-search mobileOpen" onclick="openSearch()"></i>
-      <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
-    </div>
-    
-        <span class="search-body">
-          <input class="ps-4 search-form search-posts" type="text" placeholder="Search">
+  <section class="mt-5 pt-5">
+    <div class="container blog">
+      <div class="d-flex align-items-center cat ">
+        <span class="title">You searched for
+          <p id="search-posts"></p>
         </span>
-    </nav>
 
-    <!-- .navbar -->
-
-  </div>
-</header><!-- End Header -->
+      </div>
+      <div class="row row-cols-lg-3 mt-4 small">
 
 
-<section class="mt-5 pt-5">
-            <div class="container blog">
-              <div class="d-flex align-items-center cat ">
-              <span class="title">You searched for <input type="text" name="search" id="search-posts"></span>
-              </div>
-              <div class="row row-cols-lg-3 mt-4 small">
+        {%- for post in collections.post -%}
+
+        {% include 'article-snippet.njk' %}
+
+        {%- endfor %}
+
+      </div>
+    </div>
+  </section>
 
 
-  {%- for post in collections.post -%}
+  {% include 'footer.njk' %}
 
-    {% include 'article-snippet.njk' %}
-
-  {%- endfor %}
-                
-              </div>
-            </div>
-</section>
-
-
- {% include 'footer.njk' %}
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-up-arrow-alt' style='color:#ffffff'></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class='bx bx-up-arrow-alt'
+      style='color:#ffffff'></i></a>
 
 
 
-        <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-   </script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+        }
+      });
+    }
+  </script>
 
-     <!-- Vendor JS Files -->
+  <!-- Vendor JS Files -->
   <script src="/assets/vendor/js/bootstrap.bundle.min.js"></script>
 
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
-
-<script>
-  //get input
-let input = document.getElementById("search-posts");
-//get list of value
-let posts = document.querySelectorAll(".article-snippet");
-
-//function search on the list.
-function search (){
-  for(let i = 0; i < posts.length; i += 1){
-   //check if the element contains the value of the input
-   if(posts[i].innerText.toLowerCase().includes(input.value.toLowerCase())){
-    posts[i].style.display = "block";
-   }else{
-    posts[i].style.display = "none";
-   }
-  }
-}
-
-//to the change run search.
-input.addEventListener('input', search);
-</script>
-
-  
 
 
   <!-- Vendor JS Files -->
@@ -148,21 +142,33 @@ input.addEventListener('input', search);
 
   <!-- Main JS File -->
   <script src="/assets/js/main.js"></script>
-  
+
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
 
   <script>
-   window.addEventListener('load', () => {
- 
- const searchInput = sessionStorage.getItem('searchValue');
- 
- document.getElementById('search-posts').innerHTML= searchInput;
+    //get input
+    let input = document.getElementById("search-posts");
+    //get list of value
+    let posts = document.querySelectorAll(".article-snippet");
 
-})
-</script> 
+    //function search on the list.
+    function search() {
+      for (let i = 0; i < posts.length; i += 1) {
+        //check if the element contains the value of the input
+        if (posts[i].innerText.toLowerCase().includes(input.innerText.toLowerCase())) {
+          posts[i].style.display = "block";
+        } else {
+          posts[i].style.display = "none";
+        }
+      }
+    }
 
+    //to the change run search.
+    window.addEventListener('load', search);
+  </script>
 
 </body>
- </html>
+
+</html>

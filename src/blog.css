@@ -138,8 +138,8 @@ h6 {
   position: relative;
 }
 
-.navbar a,
-.navbar a:focus,
+.navbar li a,
+.navbar li a:focus,
 .navbar li i {
   display: flex;
   align-items: center;
@@ -202,12 +202,10 @@ h6 {
   }
 }
 
-.search-body button {
-  padding-left: 8px;
-  padding-right: 8px;
+.search-body a {
+  padding: 10px 8px;
   position: fixed !important;
   right: 0;
-  z-index: 1;
   top: 40px;
   border-radius: 1px;
   outline: 0;
@@ -217,7 +215,7 @@ h6 {
   height: 50px;
 }
 
-.search-body button:hover{
+.search-body a:hover{
   background-color: #041dbf;
   color: #e1e1e1;
 }
