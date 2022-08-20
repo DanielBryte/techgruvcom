@@ -265,5 +265,13 @@ function closeSearch() {
 }
 
 
+function pushSearch() {
+      const form = document.getElementById("search-form")
+      const search = document.getElementById("search-input");
+      
+      const searchInput = search.value;
+  
+  sessionStorage.setItem("searchValue", searchInput);
+}
  
 
