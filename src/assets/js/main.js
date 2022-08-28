@@ -1,6 +1,17 @@
 (function() {
   "use strict";
+  
+//Header shadow on scrollY
 
+  window.onscroll = function() {
+    // We add pageYOffset for compatibility with IE.
+    if (window.scrollY >= 5 || window.pageYOffset >= 5 ) {
+      document.getElementById("header").classList.add("active");
+    } else {
+      document.getElementById("header").classList.remove("active");
+    }
+  };
+  
   /**
    * Easy selector helper function
    */
@@ -273,5 +284,5 @@ function pushSearch() {
   
   sessionStorage.setItem("searchValue", searchInput);
 }
- 
+
 

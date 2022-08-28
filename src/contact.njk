@@ -4,59 +4,78 @@ layout: 'services-base.njk'
 ---
 
 <!-- =======  Contact  Info======= -->
- <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-         <h2 class="text-center font-weight-bold">Contact Us</h2>
-        <div class="section-title mt-5">
-          <p>Contact us for any enquiry, ads placement, complaint, partnership, and collaboration.</p>
-        </div>
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="text-center font-weight-bold">Contact Us</h2>
+    <div class="section-title mt-5">
+      <p>Contact us for any enquiry, ads placement, complaint, partnership, and collaboration.</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col-lg-6">
 
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-md-12">
+            <div class="info-box card text-start ps-5">
+              <h3>Call/Whatsapp:</h3>
 
-            <div class="row">
-              <div class="col-md-12">
-                <div class="info-box card">
-                  <img src="/assets/img/contact-us.png">
-                </div>
+              <div>
+                <a href="tel:+"></i>+234-901-8577-780</a>
               </div>
-         
+              <h3>Email Us:</h3>
+              <div>
+                <a href="mailto:">info@techgruv.co</a><br>
+                <a href="mailto:techgruvcom@gmail.com"></i>techgruvcom@gmail.com</a>
+              </div>
+
+              <h3>Address:</h3>
+              <div><p>2 Progressive Estate, Anibaba, Ojo, Lagos, Nigeria</p></div>
+
+              <h3>Social:</h3>
+
+              <div class="d-flex d-flex align-items-center">
+                <a href="https://wa.me/message/4K7GHOUI66JFJ1"><i class='bi bi-whatsapp'></i></a>
+                <a href="https://www.linkedin.com/company/techgruv"><i class='bi bi-linkedin'></i></a>
+                <a href="https://instagram.com/techgruv"><i class='bi bi-instagram'></i></a>
+                <a href="https://twitter.com/techgruv"><i class='bi bi-twitter'></i></a>
+              </div>
+
             </div>
-
           </div>
 
-          <div class="col-lg-6 mt-4 mt-lg-0">
-            <form  action="https://formsubmit.co/60262b917ff04602aa63d711084064d2" method="POST" id="emailForm" role="form" class="email-form w-100">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3 mb-4">
-                <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message" required></textarea>
-              </div>
-              <input type="hidden" id="success"name="_next" value="/successful/">
-              <input type="hidden" name="_captcha" value="false">
-              <div class="text-center"><button type="submit" onclick="myFunction()">Send Message</button></div>
-            </form>
-
-          </div>
-          
         </div>
 
       </div>
-    </section>
 
+      <div class="col-lg-6 mt-4 mt-lg-0">
+        <form action="https://formsubmit.co/60262b917ff04602aa63d711084064d2" method="POST" id="emailForm" role="form"
+          class="email-form w-100">
+          <div class="row">
+            <div class="col-md-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-md-6 form-group mt-3 mt-md-0">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group mt-3 mb-4">
+            <textarea class="form-control" name="message" rows="5" id="message" placeholder="Message"
+              required></textarea>
+          </div>
+          <input type="hidden" id="success" name="_next" value="/successful/">
+          <input type="hidden" name="_captcha" value="false">
+          <div class="text-center"><button type="submit" onclick="myFunction()">Send Message</button></div>
+        </form>
 
+      </div>
 
-  
+    </div>
 
-  
+  </div>
+</section>

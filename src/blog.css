@@ -70,6 +70,7 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 #header {
   position: fixed;
   right: 0;
@@ -356,6 +357,9 @@ h6 {
   }
 }
 
+#header.active {
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%)  
+}
 
 
 
@@ -666,7 +670,7 @@ footer .footer-bottom .legal ul {
   color: #e1e1e1;
   font-size: 0.8rem;
   padding: 0.8px 0.3rem;
-  width: fit-content;
+  width: fit-content !important;
   padding-left: -200px !important;
 }
 

@@ -9,70 +9,64 @@
   <meta content="" name="description">
   <meta content="" name="technology, business">
 
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
 
-  <!-- Blog CSS File -->
-  <link href="/blog.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
 
 </head>
 <body>
 
 
-    <!-- ======= Header ======= -->
-<header id="header">
-  <div class="container d-flex align-items-center justify-content-between">
-    <div class="logo ms-lg-0 col-12 col-md-6 col-lg-8">
-      <h1>
-        <img src="/assets/img/logo.png" alt="logo">
-        <a href="/">TechGruv.</a>
-      </h1>
+      <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo ms-lg-0">
+        <h1>
+          <img src="/assets/img/logo.png" alt="logo">
+          <a href="/">TechGruv</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about/">About Us</a></li>
+          <li><a class="nav-link scrollto" href="/services/">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="/"><span>Blog</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/business/">Business</a></li>
+              <li><a href="/technology/">Technology</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto ms-3 pe-4 text-black refer text-center" href="/affiliate/">Refer and earn</a></li>
+          <li><a class="getstarted scrollto" href="/services">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-
-    <nav id="navbar" class="navbar col-12 col-md-6 col-lg-4">
-      <ul>
-        <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" href="/latest/">Latest</a></li>
-        <li><a class="nav-link" href="/business/">Business</a></li>
-        <li><a class="nav-link" href="/technology/">Technology</a></li>
-        <li><i class="bi bi-search search-bar" onclick="openSearch()"></i></li>
-        <li><i class="bi bi-x-lg search-close" onclick="closeSearch()"></i></li>
-      </ul>
-
-
-      <i class="bi bi-list mobile-nav-toggle"></i>
-
-    <div class="mobile-search">
-      <i class="bi bi-search mobileOpen" onclick="openSearch()"></i>
-      <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
-    </div>
-    
-        <form id="search-form" class="search-body" method="get" action="">
-          <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
-          <a href="/search" onclick = "pushSearch()" type="submit">Search</a>
-        </form>
-    </nav>
-
-    <!-- .navbar -->
-
-  </div>
-</header><!-- End Header -->
+  </header><!-- End Header -->
 
     <main>
     
@@ -356,7 +350,7 @@
 
 
 
-        <script>
+    <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -371,95 +365,30 @@
      <!-- Vendor JS Files -->
   <script src="/assets/vendor/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/blog.js"></script>
-
-  <script>
-    var images = [],
-        index = 0;
-        images[0] = "<a href=/services target=_blank><img src=/assets/img/ads/advert1.gif></a>	";
-        images[1] = "<a href=/contact target=_blank><img src=/assets/img/ads/advert2.svg></a>	";
-        images[2] = "<a href=/contact target=_blank><img src=/assets/img/ads/advert3.svg></a>	";
-        index = Math.floor(Math.random() * images.length);
-
-
-        index1 = Math.floor(Math.random() * images.length);
-
-        let advert1 = document.querySelector(".ads1");
-
-        advert1.innerHTML = images[index1];
-
-
-        index2 = Math.floor(Math.random() * images.length);
-
-        let advert2 = document.querySelector(".ads2");
-
-        advert2.innerHTML = images[index2];
-</script>
-
-<script>
-  
-// Write Javascript code!
-var pageUrl = encodeURIComponent(document.URL);
-var pageTitle = encodeURIComponent(document.title);
-
-const fb = document.getElementById('fb');
-fb.addEventListener('click', shareOnFacebook);
-
-const linkedin = document.getElementById('linkedin');
-linkedin.addEventListener('click', shareOnLinkedin);
-
-const tweet = document.getElementById('twitter');
-tweet.addEventListener('click', shareOnTwitter);
-
-const whatsapp = document.getElementById('whatsapp');
-whatsapp.addEventListener('click', shareOnWhatsapp);
-
-
-function shareOnFacebook() {
-  const navUrl =
-    'https://www.facebook.com/share?' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-function shareOnTwitter() {
-  const navUrl =
-    'https://twitter.com/intent/tweet?text=' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-function shareOnLinkedin() {
-  const navUrl =
-    'https://linkedin.com/share?text=' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-function shareOnWhatsapp() {
-  const navUrl =
-    'whatsapp://send?text=' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-</script>
-  
-
 
   <!-- Vendor JS Files -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
   
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+        AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  </script>
+
+    <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+
 
 </body>
  </html>
