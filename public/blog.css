@@ -877,3 +877,48 @@ img {
    color: #0122ed;
    font-style: italic;
 }
+
+
+/***** Author *****/
+
+.author-bio {
+  background-color: white;
+  border: 1px solid hsl(0,0%,85%);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+.author-bio-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.author-bio-content {
+  padding: 1rem;
+}
+.author-bio-name {
+  font-size: 1.25rem;
+  color: rgba(0,0,0,0.8);
+}
+.author-bio-body {
+  font-size: 1rem;
+  color: rgba(0,0,0,0.75);
+  line-height: 1.5;
+}
+
+
+
+body {  
+  background-color: #eee;
+}
+
+.author-container {
+  max-width: 350px;
+  margin: 5rem auto;
+}
+
+.author h3{
+  color: #0122ed;
+  font-size: 40px;
+  margin-top: 50px;
+}
