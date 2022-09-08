@@ -78,13 +78,8 @@ layout: 'base.njk'
             </div>
            </div>
 
-            <div class="d-flex flex-column align-items-center newsletter mt-4 d-none d-lg-block d-xl-block">
-              <h2 class="text-center">Newsletter</h2>
-              <span></span>
-              <p>Subscribe to TechGruv newsletter below</p>
-              <input type="text" class="mb-4" name="newsletter" id="newsletter" placeholder="Your email address">
-              <input type="button" value="Subscribe">
-            </div>
+                 {% include 'newsletter.njk' %}
+
           </div>
       </div>
 
@@ -172,21 +167,14 @@ layout: 'base.njk'
         {%- endfor %}
 
       </div>
+          <div class="col-12 col-md-6 col-lg-4">
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="d-flex flex-column align-items-center newsletter">
-          <h2>Newsletter</h2>
-          <span></span>
-          <p>Subscribe to TechGruv newsletter below</p>
-          <input type="text" class="mb-4" name="newsletter" id="newsletter" placeholder="Your email address">
-          <input type="button" value="Subscribe">
-        </div>
-
-
-       <div class="ads1 d-flex align-items-center justify-content-center mt-5"></div>
+          {% include 'newsletter.njk' %}
+          
+          <div class="ads1 d-flex align-items-center justify-content-center mt-5"></div>
 
 <!-- 
-        <ul class="">
+          <ul class="">
 
           <div class="d-flex flex-row justify-content-between">
             <div class="col-6 me-2">

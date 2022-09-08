@@ -31,9 +31,19 @@
   <!-- Blog CSS File -->
   <link href="/blog.css" rel="stylesheet">
 
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5CD3539');</script>
+  <!-- End Google Tag Manager -->
 </head>
 <body>
-
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CD3539"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
     <!-- ======= Header ======= -->
 <header id="header">
@@ -151,13 +161,20 @@
             </div>
            </div>
 
-            <div class="d-flex flex-column align-items-center newsletter mt-4 d-none d-lg-block d-xl-block">
-              <h2 class="text-center">Newsletter</h2>
-              <span></span>
-              <p>Subscribe to TechGruv newsletter below</p>
-              <input type="text" class="mb-4" name="newsletter" id="newsletter" placeholder="Your email address">
-              <input type="button" value="Subscribe">
-            </div>
+                         <div class="d-flex flex-column align-items-center newsletter">
+          <h2>Newsletter</h2>
+          <span></span>
+          <p>Subscribe to TechGruv Weekly Briefs below</p>
+           <form action="https://www.getrevue.co/profile/techgruv/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                <input class="text mb-4" placeholder="Your email address..." type="email" name="member[email]" id="newsletter">
+            
+                <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+           
+           </form>
+
+        </div>
+    
+
           </div>
       </div>
 
@@ -350,21 +367,26 @@
 
 
       </div>
+          <div class="col-12 col-md-6 col-lg-4">
 
-      <div class="col-12 col-md-6 col-lg-4">
-        <div class="d-flex flex-column align-items-center newsletter">
+                  <div class="d-flex flex-column align-items-center newsletter">
           <h2>Newsletter</h2>
           <span></span>
-          <p>Subscribe to TechGruv newsletter below</p>
-          <input type="text" class="mb-4" name="newsletter" id="newsletter" placeholder="Your email address">
-          <input type="button" value="Subscribe">
+          <p>Subscribe to TechGruv Weekly Briefs below</p>
+           <form action="https://www.getrevue.co/profile/techgruv/add_subscriber" method="post" id="revue-form" name="revue-form"  target="_blank">
+                <input class="text mb-4" placeholder="Your email address..." type="email" name="member[email]" id="newsletter">
+            
+                <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit">
+           
+           </form>
+
         </div>
-
-
-       <div class="ads1 d-flex align-items-center justify-content-center mt-5"></div>
+    
+          
+          <div class="ads1 d-flex align-items-center justify-content-center mt-5"></div>
 
 <!-- 
-        <ul class="">
+          <ul class="">
 
           <div class="d-flex flex-row justify-content-between">
             <div class="col-6 me-2">
