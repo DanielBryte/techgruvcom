@@ -1,6 +1,6 @@
 ---
 title: "Programmers are not hackers: 5 Misconception About Programmers"
-description: isconception About Programmers
+description: Misconception About Programmers
 author: Daniel Bryte
 date: 2022-09-08T03:01:16.777Z
 tags:
