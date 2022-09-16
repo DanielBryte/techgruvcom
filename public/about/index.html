@@ -39,38 +39,7 @@
   })(window,document,'script','dataLayer','GTM-5CD3539');</script>
   <!-- End Google Tag Manager -->
 
-    <script>
-    // Image Observer
-function lazyImageObserverFunc(lazyImages) {
-	let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          let lazyImage = entry.target;
-          lazyImage.srcset = lazyImage.dataset.srcset;
-          lazyImage.classList.remove("lazy");
-          lazyImageObserver.unobserve(lazyImage);
-				}
-      });
-    });
-
-    lazyImages.forEach(function(lazyImage) {
-      lazyImageObserver.observe(lazyImage);
-    });	
-}
-
-
-document.addEventListener("DOMContentLoaded", function() {
-  let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-
-  if ("IntersectionObserver" in window && "IntersectionObserverEntry" in window && "intersectionRatio" in window.IntersectionObserverEntry.prototype) {
     
-		if(lazyImages.length) {
-			lazyImageObserverFunc(lazyImages);
-		}
-		
-  }
-});
-  </script>
 
 </head>
 <body>
@@ -201,7 +170,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                     <a href="/affiliate/">Affliate</a>
                                 </li>
                                 <li>
-                                    <a href="/resources/">Resources</a>
+                                    <a href="/team/">Team</a>
                                 </li>
                             </ul>
                         </div>
