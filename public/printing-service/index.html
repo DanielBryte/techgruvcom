@@ -133,7 +133,7 @@
                     </div>
               </div>
                     <div class="card-text row mt-2">
-                        <!--Design order description-->
+                        <!--Marketing order description-->
                         <form id="paymentForm" method="POST" action=""" enctype="multipart/form-data">
                             <div class="input-group mt-3 mb-3">
                               <label class="input-group-text" for="client-name">Name<span class="required">*</span></label>
@@ -145,15 +145,15 @@
                               <input type="email" id="client-email" class="form-control" placeholder="" aria-label="Input your name for contacting you" required>
                             </div>
 
-                            <div class="input-group mt-3 mb-3">
-                              <label class="input-group-text" for="client-number">Phone<span class="required">*</span></label>
-                              <input type="text" id="client-number" class="form-control" placeholder="" aria-label="Input your number for contacting you" required >
+                            <div class="input-group mt-3 mb-3"> 
+                              <label class="input-group-text" for="client-number">Phone</label>
+                              <input type="text" id="client-number" class="form-control" placeholder="Your phone number (optional)" aria-label="Input your number for contacting you">
                             </div>
 
 
                             <div class="input-group mt-3 mb-3">
-                              <label class="input-group-text" for="Describe">Describe<span class="required">*</span></label>
-                              <textarea type="text" class="form-control" id="describe"></textarea>
+                              <label for="describe" >Describe <span class="required pe-1">* </span></label>
+                              <textarea type="text" rows=6 class="form-control" id="describe" placeholder="Describe your work and how you want our service"></textarea>
                             </div>
 
 
@@ -164,7 +164,7 @@
                               <option value="Magazines">Magazines</option>
                               <option value="business cards">Business Cards</option>
                               <option value="flyers">Flyers</option>
-                              <option value="non-paper" disabled>Non paper printing</option>
+                              <option value="non-paper">Custom</option>
 
 
 
@@ -184,17 +184,12 @@
                             </select>
 
 
-                            <small class="ps-2">When do you want it?<span class="required">*</span></small>
-                            <select class="form-select mt- mb-3 serviceTime" required="required" aria-label="deliveryTime" id="deliveryTime">
-                            <option selected>When do you want it?</option>
-                            </select>
-
                             <div class="input-group mb-3 mt-3">
                               <input class="form-control" type="text" id="referralcode" placeholder="Any referral code?">
                             </div>
 
                             <div class="button text-center mb-5 mt-4">
-                              <button type="submit" class="btn btn-primary btn-purchase btn-price mb-2">Contact Us</button>
+                              <button type="submit" class="btn btn-primary btn-purchase btn-price mb-2">Send</button>
                             </div>
                           </form>
              </div>
