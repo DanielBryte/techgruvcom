@@ -296,14 +296,11 @@
                 <div class="col-lg-4 col-md-6 item">
                     <div class="f-item recent-post">
                         <h4 class="widget-title">Recent News</h4>
-                        <div class="item">
-                            <a href="#">Essential reasons why your business should have a website.</a>
-                            <span><i class="bx bx-calendar-alt"></i> 22 MAY, 2022 -  <a href="#">Admin<a><span>
-                        </div>
-                        <div class="item">
-                            <a href="#">5 unique ways to generate money through content creation.</a>
-                            <span><i class="bx bx-calendar-alt"></i> 1 May, 2022 -  <a href="#">Admin</a></span>
-                        </div>
+                         {%- for post in collections.post.reverse() | limit(2) -%}
+
+                            {% include 'footer-news.njk' %}
+
+                            {%- endfor %}
                     </div>
                 </div>
 
