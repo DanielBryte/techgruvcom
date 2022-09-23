@@ -30,23 +30,19 @@ Content creation can be for many reasons, and in many forms and that's why it st
 
 Here are some reasons you can start creating content today:
 
-#### To Build A Fan Base
-
+##### To Build A Fan Base
 
 A consistent content creator will surely will lots of people heart who will turn out to be a big follower and fan, at the end of the day you start getting lots of attention through your content.
 
-#### For marketing
-
+##### For marketing
 
 You can solely choose to be creating content for marketing, you can be a copywriter, article writer, etc. and make content for the aim of driving sales and awareness.
 
-#### To pass information
-
+##### To pass information
 
 While others are creating contents for a profitable goal, you can choose to produce content to pass information, lots of companies fall into this category, a blog section, and social media page is a preferred way or medium of creating for most modern companies.
 
-#### For entertainment
-
+##### For entertainment
 
 You can create content to entertain people, this can also be in any form written, audio or video and can still reach the aim of why it was created. This is one of the main ways content are produced from social platforms.
 
