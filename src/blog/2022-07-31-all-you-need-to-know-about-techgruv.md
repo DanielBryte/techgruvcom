@@ -33,8 +33,8 @@ TechGruv was founded as a Youtube channel in 2019, where the founder, Ezediniru 
 
 TechGruv is here to **change**, **impact**, **aid**, and **enlighten** our audience and customers. We will build a solid presence in the tech media industry and on all social platforms and preach all about business and tech in a unique way. When you stay tuned with TechGruv you will never miss out on any opportunity and news that might change your life. 
 
-#### When are we launching?
+#### When was TechGruv launched?
 
-TechGruv is launching on August 15,  and by then the company with being fully built to was it was planned to be. We are here to stay, aid you, make a positive impact in the tech industry, and keep you enlightened on tech and business content like Techpoint, TechCabal, TechCrunch, and the rest. 
+TechGruv was launched on 25th September, 2022. We are here to stay, aid you, make a positive impact in the tech industry, and keep you enlightened on tech and business content like Techpoint, TechCabal, TechCrunch, and other tech media companies.
 
-**Stay Tuned To The Journey.**
+**P﻿lease support the journey.**
