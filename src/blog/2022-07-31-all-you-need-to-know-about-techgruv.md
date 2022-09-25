@@ -6,6 +6,7 @@ description: "All you need to know about TechGruv, the vision, the mission, and
 author: Daniel Bryte
 date: 2022-07-31T09:47:55.171Z
 tags:
+  - Featured
   - Technology
 image: /assets/img/posts/1.png
 imageAlt: TechGruv - The Logo
