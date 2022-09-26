@@ -27,7 +27,7 @@ When we say **"Media",** we are bringing high-quality business and technology co
 
 #### How was it founded?
 
-TechGruv was founded as a Youtube channel in 2019, where the founder, Ezediniru Daniel was using that medium to dish out business and tech content which he did for 3 years before learning coding skills and rebranding the channel into a company from scratch. Now he has a platform to impact people more. It all started with a little cheap smartphone he used to make tech videos when he was just 15 years and now he has rebuilt the whole idea to the next big thing.
+TechGruv was founded as a Youtube channel in 2019, where the founder, Ezediniru Daniel was using that medium to dish out business and tech content which he did for 3 years before learning coding skills and rebranding the channel with his cousin, Agba Jerry into a company from scratch It all started with a cheap smartphone used to make tech videos, and now something bigger and better.
 
 #### What do we have to offer?
 
