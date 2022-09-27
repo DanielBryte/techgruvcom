@@ -15,4 +15,6 @@ Making a seed round of $3.2million on October, 2021, the food-tech startup goes 
 
 According to TechCrunch, Vendease's CEO, Tunde Kara revealed plans to foster the supply, finance, storage of food in aim to facilitate the food chain system in Nigeria and other African countries.
 
-Vendease was founded in January 2020 by four friends: Tunde Kara (CEO), Olumide Fayankin (COO), Gatumi Aliyu (CPO) and Wale Oyepeju (CTO), to solve Africa’s food supply chain problems by digitising procurement processes, storage operations and logistics, and offering flexible payment systems to help food businesses grow
+Tunde Kara, Olumide Fayankin, Gatumi Aliyu and Wale Oyepeju, four close friends founded Vendease in January 2020 after they initially ran an adtech startup targeted to place advert on public vehicles, though didn't scale but the experience assisted the co-founders in building Vendease.
+
+M﻿ore details coming...
