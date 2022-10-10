@@ -1,8 +1,8 @@
 ---
-title: "YouTube vs TikTok:  YouTube set out to roll out a new feature
-  \"handles\" to improve users' connectivity"
-description: YouTube set out to roll out a new feature "handles" to improve
-  users' connectivity
+title: "YouTube vs TikTok: Barely 3 weeks after introducing Shorts revenue
+  program, YouTube set to roll out another new feature "
+description: In the battle of video-sharing domination, the biggest
+  video-sharing platform "YouTube" has rolled out another feature
 author: Daniel Bryte
 date: 2022-10-10T16:50:15.998Z
 tags:
