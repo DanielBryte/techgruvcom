@@ -8,7 +8,7 @@ date: 2022-10-10T16:50:15.998Z
 tags:
   - Featured
   - Technology
-image: /assets/img/posts/youtube-edited.png
+image: /assets/img/posts/youtube-handles.png
 imageAlt: YouTube-Handles
 ---
 In an email sent to all YouTube creators, the team announced that the platform will be rolling out a new feature called "Handle" which will provide users with new ways to connect and find each other on YouTube, unlike YouTube channel names, handles will be unique and tied to just one channel making it easier for it users to connect with the right creator and other users on YouTube.
