@@ -6,7 +6,7 @@ author: Daniel Bryte
 date: 2022-09-26T16:37:46.446Z
 tags:
   - Technology
-image: /assets/img/posts/vendease.jpg
+image: /assets/img/posts/vandease.png
 imageAlt: Vendease co-founders
 ---
 Y-Combinator backed startup, Vendease has secured $30 million funding round to expand and strengthen its operations in the food chain business.
