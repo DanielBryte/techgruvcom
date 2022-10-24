@@ -6,7 +6,6 @@ description: In the battle of video-sharing domination, the biggest
 author: Daniel Bryte
 date: 2022-10-10T16:50:15.998Z
 tags:
-  - Featured
   - Technology
 image: /assets/img/posts/youtube-handles.png
 imageAlt: YouTube-Handles
