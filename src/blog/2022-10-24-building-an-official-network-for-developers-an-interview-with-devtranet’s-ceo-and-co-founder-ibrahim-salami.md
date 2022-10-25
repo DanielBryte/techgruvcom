@@ -14,6 +14,8 @@ imageAlt: Devtranet
 Devtranet is building a global network for developers and technologists to connect, build, and discover opportunities.
 
 “**Dev**” comes from Developers, Technologists, and Techies.
+
+
 “**Tranet**” comes from Network, Planet, and Community.
 
 ![Devtranet-logo](/assets/img/posts/devtranet.png "Devtranet")
