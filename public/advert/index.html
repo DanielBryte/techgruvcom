@@ -5,111 +5,150 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>About Page</title>
+  <title>Advertise With Us</title>
   <meta content="" name="description">
   <meta content="" name="technology, business">
+
+  <!--font awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
 
-  <!-- Blog CSS File -->
-  <link href="/blog.css" rel="stylesheet">
 
-  <!-- Adsense  -->
-
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7407996994110558"
-     crossorigin="anonymous"></script>
-
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-5CD3539');</script>
-  <!-- End Google Tag Manager -->
-
-    
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
 
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CD3539"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
-    <!-- ======= Header ======= -->
-<header id="header">
-  <div class="container d-flex align-items-center justify-content-between">
-    <div class="logo ms-lg-0 col-12 col-md-6 col-lg-8">
-      <h1>
-        <img src="/assets/img/logo.png" alt="logo">
-        <a href="/">TechGruv.</a>
-      </h1>
+
+      <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo ms-lg-0">
+        <h1>
+          <img src="/assets/img/logo.png" alt="logo">
+          <a href="/">TechGruv</a></h1>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/about/">About Us</a></li>
+          <li><a class="nav-link scrollto" href="/services/">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="/"><span>Blog</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="/business/">Business</a></li>
+              <li><a href="/technology/">Technology</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto ms-3 pe-4 text-black refer text-center" href="/affiliate/">Refer and earn</a></li>
+          <li><a class="getstarted scrollto" href="/services">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
-
-    <nav id="navbar" class="navbar col-12 col-md-6 col-lg-4">
-      <ul>
-        <li><a class="nav-link" href="/">Home</a></li>
-        <li><a class="nav-link" href="/latest/">Latest</a></li>
-        <li><a class="nav-link" href="/business/">Business</a></li>
-        <li><a class="nav-link" href="/technology/">Technology</a></li>
-        <li><i class="bi bi-search search-bar" onclick="openSearch()"></i></li>
-        <li><i class="bi bi-x-lg search-close" onclick="closeSearch()"></i></li>
-      </ul>
-
-
-      <i class="bi bi-list mobile-nav-toggle"></i>
-
-    <div class="mobile-search">
-      <i class="bi bi-search mobileOpen" onclick="openSearch()"></i>
-      <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
-    </div>
-    
-        <form id="search-form" class="search-body" method="get" action="">
-          <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
-          <a href="/search" onclick = "pushSearch()" type="submit">Search</a>
-        </form>
-    </nav>
-
-    <!-- .navbar -->
-
-  </div>
-</header><!-- End Header -->
+  </header><!-- End Header -->
 
     <main>
-    
-  <!-- ======= About us Section ======= -->
-  <section id="affliateform" class="contact section-bg">
-    <div class="container" data-aos="fade-up">
-
-
-
+    <!-- ======= About us Section ======= -->
+<section id="advert" class="advert">
+  <div class="container">
+    <div class="row advert-head">
+      <h1>A unique way for your brand to reach the readers community</h1>
     </div>
-  </section>
-  
-  <!-- End About Section -->
+  </div>
+</section>
+
+<section id="advert" class="advert section-bg">
+  <div class="container">
+    <h4>Display your brand to thousands of audience on:</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-5 mt-4">
+      <div class="col">
+        <div class="card">
+          <img class="card card-img" src="/assets/img/advert/1.png" alt="Social Media">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="card card-img" src="/assets/img/advert/2.png" alt="Newsletters">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card">
+          <img class="card card-img" src="/assets/img/advert/3.png" alt="Blog Ads">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-5 mt-4">
+
+      <div class="col">
+        <div class="card">
+          <img class="card card-img" src="/assets/img/advert/4.png" alt="Sponsered Posts">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="card card-img" src="/assets/img/advert/5.png" alt="Sponsered Article">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="card card-img" src="/assets/img/advert/6.png" alt="Video Ads">
+          <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
 
 
 
-  
+      <a class="text-center" href="/assets/TG-MEDIA-KIT.pdf">Explore Our Advert Rates and Audience</a>
+    </div>
 
- 
+
+
+
+  </div>
+  </div>
+  </div>
+</section>
+
+<!-- End About Section -->
     </main>
 
     <footer class=" text-light">
@@ -161,12 +200,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         <h4 class="widget-title">Company</h4>
                         <ul>
                             <li>
-                                <a href="/about/">About</a>
-                            </li>
-                            <li>
-                                <a href="/contact/">Contact Us</a>
-                            </li>
-                            <li>
                                 <a href="/services/">Services</a>
                             </li>
                             <li>
@@ -177,6 +210,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </li>
                             <li>
                                 <a href="/team/">Team</a>
+                            </li>
+                            <li>
+                                <a href="/contact/">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="/advert/">Advertise With Us</a>
                             </li>
                         </ul>
                     </div>
@@ -257,7 +296,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-        <script>
+    <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -272,96 +311,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
      <!-- Vendor JS Files -->
   <script src="/assets/vendor/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/blog.js"></script>
-
-  <script>
-    var images = [],
-        index = 0;
-        images[0] = "<a href=/services target=_blank><img src=/assets/img/ads/advert1.gif></a>	";
-        images[1] = "<a href=/contact target=_blank><img src=/assets/img/ads/advert2.svg></a>	";
-        images[2] = "<a href=/contact target=_blank><img src=/assets/img/ads/advert3.svg></a>	";
-        index = Math.floor(Math.random() * images.length);
-
-
-        index1 = Math.floor(Math.random() * images.length);
-
-        let advert1 = document.querySelector(".ads1");
-
-        advert1.innerHTML = images[index1];
-
-
-        index2 = Math.floor(Math.random() * images.length);
-
-        let advert2 = document.querySelector(".ads2");
-
-        advert2.innerHTML = images[index2];
-</script>
-
-<script>
-  
-// Write Javascript code!
-var pageUrl = encodeURIComponent(document.URL);
-var pageTitle = encodeURIComponent(document.title);
-
-const fb = document.getElementById('fb');
-fb.addEventListener('click', shareOnFacebook);
-
-const linkedin = document.getElementById('linkedin');
-linkedin.addEventListener('click', shareOnLinkedin);
-
-const tweet = document.getElementById('twitter');
-tweet.addEventListener('click', shareOnTwitter);
-
-const whatsapp = document.getElementById('whatsapp');
-whatsapp.addEventListener('click', shareOnWhatsapp);
-
-
-function shareOnFacebook() {
-  const navUrl =
-    'https://www.facebook.com/share?' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-function shareOnTwitter() {
-  const navUrl =
-    'https://twitter.com/intent/tweet?text=' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-function shareOnLinkedin() {
-  const navUrl =
-    'https://linkedin.com/share?text=' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-function shareOnWhatsapp() {
-  const navUrl =
-    'whatsapp://send?text=' +
-    pageTitle + " " + pageUrl  ;
-  window.open(navUrl, '_blank');
-}
-
-</script>
-  
-
 
   <!-- Vendor JS Files -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
   
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+        AOS.init({
+      duration: 1000,
+      easing: "ease-in-out",
+      once: true,
+      mirror: false
+    });
+  </script>
+
+    <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
 
 
 </body>
