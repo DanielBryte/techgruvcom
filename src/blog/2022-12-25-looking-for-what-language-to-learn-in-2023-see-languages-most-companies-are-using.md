@@ -1,6 +1,6 @@
 ---
-title: Looking for what language to learn in 2023 - See languages most companies
-  are using
+title: Looking for what language to learn in 2023 - See the most used languages
+  by tech companies
 description: There are several factors to consider before learning a programming
   language, but based on what most companies are using and hiring here are
   languages you should consider learning in 2033
@@ -17,7 +17,7 @@ As we enter the final stretch of 2022, many individuals are starting to think ab
 However, If you're considering learning a new programming language in 2023, you can narrow down your options by using some key criteria such as; learning a language that is in demand in the job market, with this, you can increase your chances of finding employment or advancing in your career, learning a language with high popularity and community support, with this, you'll have access to a wealth of resources and support as you learn, ease of learning and compatibility with other languages is also another criteria.\
 \
 \
-Overall, the best programming language for you to learn will depend on your individual goals and needs, but to avoid being drowned in a pool of choices, I have drafted 10 programming languages you should consider learning in 2023 based on what most companies are hiring for:\
+Overall, the best programming language for you to learn will depend on your individual goals and needs, but to avoid being drowned in a pool of choices, I have drafted 5 programming languages you should consider learning in 2023 based on what most companies are hiring for:\
 \
 \
 **1. Javascript (React, Angular, Node JS...)**\
