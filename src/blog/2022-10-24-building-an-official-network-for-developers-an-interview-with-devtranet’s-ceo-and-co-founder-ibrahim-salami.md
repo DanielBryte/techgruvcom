@@ -6,7 +6,6 @@ description: Meet the 18 years old techie building "Devtranet" the next biggest
 author: Daniel Bryte
 date: 2022-10-25T19:50:10.416Z
 tags:
-  - Featured
   - Technology
 image: /assets/img/posts/devtranet-1-.png
 imageAlt: Devtranet
