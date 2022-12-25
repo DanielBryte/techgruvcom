@@ -850,27 +850,25 @@ img {
 
 .success {
   text-align: center;
-  color: #0122ed;
+  color: hsl(232, 99%, 47%);
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .success-wrap {
-  font-size: 5rem;
   border-radius: 10px;
   padding: 50px;
   background-color: #2C2C32;
 }
 
-.success-wrap i {
-  color: white
-}
 
 .success a {
   background-color: blue;
-  padding: 10px 20px;
+  padding: 10px 16px;
   color: #fff;
   font-weight: 800;
   border-radius: 5px;
-  width: 50%
+  font-size: 1.1rem;
 }
 
 
