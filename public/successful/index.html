@@ -5,137 +5,104 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Privacy Policy</title>
+  <title>TechGruv | Services</title>
   <meta content="" name="description">
   <meta content="" name="technology, business">
-
-  <!--font awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
+  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
   <!-- Vendor CSS Files -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  
 
+  <!-- Blog CSS File -->
+  <link href="/blog.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet">
+  <!-- Adsense  -->
+
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7407996994110558"
+     crossorigin="anonymous"></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5CD3539');</script>
+  <!-- End Google Tag Manager -->
+
+    
 
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CD3539"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
-
-      <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo ms-lg-0">
-        <h1>
-          <img src="/assets/img/logo.png" alt="logo">
-          <a href="/">TechGruv</a></h1>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="/about/">About Us</a></li>
-          <li><a class="nav-link scrollto" href="/services/">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="/"><span>Blog</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="/business/">Business</a></li>
-              <li><a href="/technology/">Technology</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto ms-3 pe-4 text-black refer text-center" href="/affiliate/">Refer and earn</a></li>
-          <li><a class="getstarted scrollto" href="/services">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+    <!-- ======= Header ======= -->
+<header id="header">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="logo ms-lg-0 col-12 col-md-6 col-lg-8">
+      <h1>
+        <img src="/assets/img/logo.png" alt="logo">
+        <a href="/">TechGruv.</a>
+      </h1>
     </div>
-  </header><!-- End Header -->
+
+    <nav id="navbar" class="navbar col-12 col-md-6 col-lg-4">
+      <ul>
+        <li><a class="nav-link" href="/">Home</a></li>
+        <li><a class="nav-link" href="/services/">Services</a></li>
+        <li><a class="nav-link" href="/business/">Business</a></li>
+        <li><a class="nav-link" href="/technology/">Technology</a></li>
+        <li><i class="bi bi-search search-bar" onclick="openSearch()"></i></li>
+        <li><i class="bi bi-x-lg search-close" onclick="closeSearch()"></i></li>
+      </ul>
+
+
+      <i class="bi bi-list mobile-nav-toggle"></i>
+
+    <div class="mobile-search">
+      <i class="bi bi-search mobileOpen" onclick="openSearch()"></i>
+      <i class="bi bi-x-lg mobileClose" onclick="closeSearch()"></i>
+    </div>
+    
+        <form id="search-form" class="search-body" method="get" action="">
+          <input class="ps-4 search-form" id="search-input" type="search" placeholder="Search">
+          <a href="/search" onclick = "pushSearch()" type="submit">Search</a>
+        </form>
+    </nav>
+
+    <!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
 
     <main>
     
- <div class="legals">
-    <p>Privacy Policy</p>
- </div>
-  <div class="container">
-      <h1 class="legals-head mt-5">
-          1. Introduction</h1>
-      <p class="legals-text">
-          When you use TechGruv site and products, you trust us with your information. This Privacy Policy is meant to help you understand what data we collect, why we collect it, and what we do with it. This is important; we hope you will take time to read it carefully.</p>
-  </div>
-
-  <div class="container">
-    <h1 class="legals-head">2. Information we collect</h1>
-    <p class="legals-text">
-        As an early brand we collect few information to serve you better while using our products, joining our programs or services.
-        Any information you provide to us is only used for the service, program or product purposes and nothing else.<br>
-
-        We do not transmit this data to any third-parties and do not utilize it to track users for marketing purposes.
-        This data is encrypted and we do not process or use it in any way or form. 
-    </p>
-    <p class="legals-text">
-        By clicking the <strong>Submit</strong> button in any <strong>Form (contact form, refferal form or services form)</strong> across TechGruv site user agrees to share their data with TechGruv only. Therefore, this information can be processed by TechGruv in accordance with their Privacy Policy.
-    </p>
 
 
-    <h1 class="legals-head">
-        3. Use of your information
-    </h1>
-    <p class="legals-text">
-        We will never sell, transfer or give your information to a third party without your permission. However, you agree that we may use your information:
-        <ul class="mt-5 text-black">
-            <li class="mb-3">To serve you well.</li>
-            <li>To contact you and to respond to inquiries.</li>
-        </ul>
-    </p>
-
-    <p class="legals-text">
-        Additionally, we may give your information to law enforcement if we are compelled to by a court order, if there has been a violation of Privacy Policy.
-    </p>
- 
-    <h1 class="legals-head">
-        4. Your rights and choices
-    </h1>
-
-
-    <p class="legals-text">You have right to: access, update, change or delete your Personal Information. This can be done by reaching out to us at https://techgruv.co/contact to request the required changes.
-        Please note that we may need to verify your identity in regards to your request. This verification process may require you to provide us with additional information, especially if you lost the details you sent initially. If we are unable to verify your identity or request, we may not, in accordance with applicable law, be able to fulfill your request.
-    </p>
-
-    <h1 class="legals-head">5. Third parties</h1>
-
-    <p class="legals-text">TechGruv may post links to third party websites on our site or products, which may include information that we have no control over. When accessing a third party site through our site or products, you acknowledge that you are aware that these third party websites are not screened for privacy or security issues by us, and you release us from any liability for the conduct of these third party websites. Please be aware that this Privacy Policy, and any other policies in place, in addition to any amendments, does not create rights enforceable by third parties. TechGruv bears no responsibility for the information collected or used by any advertiser or third party website. You must review their Terms of Service and Privacy to understand how their information collection practices work.
-    </p>
-
-    <h1 class="legals-head">6. Security Measures</h1>      
-    <p class="legals-text">We use SSL Certificates and vulnerability scanning to enhance the security of our site. However, we make no guarantees as to the security or privacy of your information. It is in our interest to keep our website secure, but we recommend that you use anti-virus software, routine credit checks, firewalls, and other precautions to protect yourself from security and privacy threats.</p>
-
-
-    <h1 class="legals-head">7. When this Privacy Policy applies</h1>
-    <p class="legals-text">Our Privacy Policy applies to the site https://www.techgruv.co/ and services offered on it, but excludes services that have separate privacy policies that do not incorporate this Privacy Policy.</p>
-
-    <h1 class="legals-head">8. Changes</h1>
-    <p class="legals-text mb-5">Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any privacy policy changes on this page and, if the changes are significant, we will provide a more prominent notice (including, for certain services).</p>
-</div>
-
-
-    
+    <div class="container">
+      <div class="row d-flex align-items-center">
+       <div class="col-lg-6 py-lg-0 order-2 order-lg-1 " data-aos="">
+        <h1>Grow your business with Techgruv</h1>
+       </div>
+     </div>
+    </div>
     </main>
 
     <footer class=" text-light">
@@ -283,7 +250,7 @@
 
 
 
-    <script>
+        <script>
   if (window.netlifyIdentity) {
     window.netlifyIdentity.on("init", user => {
       if (!user) {
@@ -298,29 +265,96 @@
      <!-- Vendor JS Files -->
   <script src="/assets/vendor/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/blog.js"></script>
+
+  <script>
+    var images = [],
+        index = 0;
+        images[0] = "<a href=/services target=_blank><img src=/assets/img/ads/advert1.gif></a>	";
+        images[1] = "<a href=/contact target=_blank><img src=/assets/img/ads/advert2.svg></a>	";
+        images[2] = "<a href=/contact target=_blank><img src=/assets/img/ads/advert3.svg></a>	";
+        index = Math.floor(Math.random() * images.length);
+
+
+        index1 = Math.floor(Math.random() * images.length);
+
+        let advert1 = document.querySelector(".ads1");
+
+        advert1.innerHTML = images[index1];
+
+
+        index2 = Math.floor(Math.random() * images.length);
+
+        let advert2 = document.querySelector(".ads2");
+
+        advert2.innerHTML = images[index2];
+</script>
+
+<script>
+  
+// Write Javascript code!
+var pageUrl = encodeURIComponent(document.URL);
+var pageTitle = encodeURIComponent(document.title);
+
+const fb = document.getElementById('fb');
+fb.addEventListener('click', shareOnFacebook);
+
+const linkedin = document.getElementById('linkedin');
+linkedin.addEventListener('click', shareOnLinkedin);
+
+const tweet = document.getElementById('twitter');
+tweet.addEventListener('click', shareOnTwitter);
+
+const whatsapp = document.getElementById('whatsapp');
+whatsapp.addEventListener('click', shareOnWhatsapp);
+
+
+function shareOnFacebook() {
+  const navUrl =
+    'https://www.facebook.com/share?' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnTwitter() {
+  const navUrl =
+    'https://twitter.com/intent/tweet?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnLinkedin() {
+  const navUrl =
+    'https://linkedin.com/share?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+function shareOnWhatsapp() {
+  const navUrl =
+    'whatsapp://send?text=' +
+    pageTitle + " " + pageUrl  ;
+  window.open(navUrl, '_blank');
+}
+
+</script>
+  
+
 
   <!-- Vendor JS Files -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="/assets/js/main.js"></script>
   
   <!--Boxicon -->
   <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-        AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  </script>
-
-    <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
 
 
 </body>
