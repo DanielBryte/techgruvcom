@@ -1,6 +1,6 @@
 ---
-title: Looking for what language to learn in 2023 - See the most used languages
-  by tech companies
+title: Looking for what programming language to learn in 2023 - See the most
+  used languages by tech companies
 description: There are several factors to consider before learning a programming
   language, but based on what most companies are using and hiring here are
   languages you should consider learning in 2033
