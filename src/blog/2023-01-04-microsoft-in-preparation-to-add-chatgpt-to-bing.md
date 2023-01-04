@@ -1,5 +1,5 @@
 ---
-title: Microsoft in preparation to add ChatGPT to Bing
+title: "Bing Vs Google: Microsoft in preparation to add ChatGPT to Bing"
 description: "Microsoft is presently making significant efforts and moves to
   overtake its rival, Google from the search engine market. The big tech company
   is in preparation to add OpenAI's GPT-3 language model, its $1 billion
