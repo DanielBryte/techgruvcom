@@ -285,7 +285,9 @@ function pushSearch() {
   sessionStorage.setItem("searchValue", searchInput);
 }
 
-<script>
+
+// FOR NEWSLETTER
+
   (function (s, e, n, d, er) {
     s['Sender'] = er;
     s[er] = s[er] || function () {
@@ -298,4 +300,3 @@ function pushSearch() {
     m.parentNode.insertBefore(a, m)
   })(window, document, 'script', 'https://cdn.sender.net/accounts_resources/universal.js', 'sender');
   sender('9a66b92e7f1615')
-</script>
