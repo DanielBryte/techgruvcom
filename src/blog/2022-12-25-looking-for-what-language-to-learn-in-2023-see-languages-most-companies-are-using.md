@@ -8,7 +8,6 @@ author: Daniel Bryte
 date: 2022-12-25T16:10:12.224Z
 tags:
   - Technology
-  - Featured
 image: /assets/img/posts/techgruv-blog-post.png
 imageAlt: Programming language to learn in 2023
 ---
