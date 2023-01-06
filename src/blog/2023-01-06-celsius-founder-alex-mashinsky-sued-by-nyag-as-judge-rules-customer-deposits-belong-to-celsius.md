@@ -7,7 +7,7 @@ description: Alex Mashinsk, the founder and CEO of Celsius was recently sued by
 author: Chris Jerry
 date: 2023-01-06T15:42:33.795Z
 tags:
-  - Business
+  - Business.
 image: /assets/img/posts/techgruv-blog-post.png
 imageAlt: Celsius Founder Sued By NYAG
 ---
