@@ -8,7 +8,7 @@ author: Daniel Bryte
 date: 2022-12-25T16:10:12.224Z
 tags:
   - Technology
-image: /assets/img/posts/techgruv-blog-post.png
+image: /assets/img/posts/microsoft-chatgpt-2-.png
 imageAlt: Programming language to learn in 2023
 ---
 As we enter the final stretch of 2022, many individuals are starting to think about their goals for the coming year. For many, learning a new skill is high on the list of priorities, you might love to transition into tech or instead learn a new programming language, but with so many options out there, it can be tough to decide which language is the best choice for you.\
