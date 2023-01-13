@@ -96,7 +96,7 @@ layout: 'base.njk'
     </div>
     <div class="row row-cols-lg-4 row-4 mt-4 small">
 
-      {%- for post in collections.post.reverse() | limit(4) -%}
+      {%- for post in collections.post | limit(4) -%}
 
       {% include 'article-snippet.njk' %}
 
