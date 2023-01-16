@@ -7,7 +7,6 @@ description: "Microsoft is presently making significant efforts and moves to
 author: Daniel Bryte
 date: 2023-01-04T15:27:55.197Z
 tags:
-  - Featured
   - Technology
 image: /assets/img/posts/microsoft-chatgpt-2-.png
 imageAlt: Microsoft, chatGPT, bing versus Google
