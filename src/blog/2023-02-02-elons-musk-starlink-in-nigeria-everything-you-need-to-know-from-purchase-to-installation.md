@@ -9,7 +9,7 @@ author: Daniel Bryte
 date: 2023-02-01T08:46:26.588Z
 tags:
   - Technology
-image: /assets/img/posts/starlink.jpg
+image: /assets/img/posts/starlink-elon-musk.png
 imageAlt: Starlink
 ---
 7 months after tech billionaire, CEO of Space X and Tesla, Elon Musk announced on Twitter that SpaceX’s Starlink, the world's first and largest satellite constellation will be available to Nigeria, the long-anticipated launch has finally come.
