@@ -1,12 +1,13 @@
 ---
-title: THE CORE RECIPES OF A SUCCESSFUL START-UP
+title: The Core Recipes Of A Successful Startup Company
 description: " The Billion Dollar Code is a must-watch movie for every
   entrepreneur, unlike the most clichéd start-up stories of rags to riches, the
   underdog that disrupted the entire industry, or two nerds that oddly turned a
   hobby into a unicorn – it does the opposite and profoundly so."
-author: Nev
+author: Neville Nyamhindu
 date: 2023-02-08T10:13:50.119Z
 tags:
+  - Featured
   - Business
 image: /assets/img/posts/startup.png
 imageAlt: Startup
