@@ -4,7 +4,6 @@ description: Y combinator releases startups accepted into the Winter 2023 batch 
 author: Daniel Bryte
 date: 2023-01-16T19:02:41.640Z
 tags:
-  - Featured
   - Technology
 image: /assets/img/posts/yc-2023-african-startups.png
 imageAlt: Ycombinator Winter 2023
